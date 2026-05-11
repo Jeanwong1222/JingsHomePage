@@ -3,16 +3,16 @@
   contents:
     - title: Ph.D. in Educational Psychology and Research Methodology
       institution: Purdue University, West Lafayette, United States
-      year: Present
+      year: Aug. 2023 – Present
       description:
         - Supported by the Ross Fellowship.
         - Advised by Prof. <a href="https://www.education.purdue.edu/faculty-staff/faculty/hua-hua-chang/">Hua-Hua Chang</a>.
-    
+
     - title: M.S. in Applied Statistics
       institution: Purdue University, West Lafayette, United States
-      year: Present
+      year: Jan. 2026 – Present
       description:
-        - Ongoing degree program.
+        - Concurrent with the Ph.D. program.
         
     - title: M.Ed. in Educational Psychology
       institution: East China Normal University, Shanghai, China
@@ -60,8 +60,11 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - NCME Graduate Student Works-in-Progress eBoard Competition Award Winner
     - year: 2025
-      items: 
+      items:
         - Psychometric Society Vector Travel Award
     - year: 2023
       items: 
