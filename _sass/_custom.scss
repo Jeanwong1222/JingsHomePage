@@ -41,15 +41,20 @@ a:focus {
   display: flex;
   gap: 2.2rem;
   align-items: center;
-  margin: 0.5rem 0 2rem;
+  margin: 0.5rem 0 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #ebebeb;
 }
 .intro-photo {
   flex-shrink: 0;
-  width: 170px;
+  width: 150px;
+}
+.intro-photo figure {
+  margin: 0;
 }
 .intro-photo img {
-  width: 170px;
-  height: 170px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.14);
@@ -100,6 +105,8 @@ a:focus {
   letter-spacing: 0.1em;
   color: #1772d0;
   margin: 2.2rem 0 0.9rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid #ebebeb;
 }
 .post > article h2 a {
   color: inherit;
