@@ -131,6 +131,26 @@ ul.honors-list li::before {
   left: 0;
 }
 
+/* ---- News list: [YYYY.MM] inline, bulleted (matches reference) ---- */
+ul.news-list {
+  margin: 0.4rem 0 1rem;
+  padding-left: 1.2em;
+}
+ul.news-list li {
+  margin: 0.55rem 0;
+  line-height: 1.55;
+}
+ul.news-list .news-date {
+  white-space: nowrap;
+  margin-right: 0.15rem;
+}
+
+/* ---- Navbar links: lighter weight (was too bold) ---- */
+.navbar .nav-item .nav-link,
+.navbar .navbar-brand {
+  font-weight: 400;
+}
+
 /* ---- Responsive: stack the header on narrow screens ---- */
 @media (max-width: 600px) {
   .intro-header {
