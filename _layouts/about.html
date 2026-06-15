@@ -4,39 +4,37 @@ layout: default
 
 <!-- about.html -->
       <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-            {{ site.first_name }}  {{ site.last_name }}
-           <!-- {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %} -->
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
+        <!-- Intro header: profile photo (left) + info & links (right) -->
+        <div class="intro-header">
+          {%- if page.profile and page.profile.image -%}
+            {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+            <div class="intro-photo">
               {% include figure.html
               path=profile_image_path
-              class=profile_image_class
+              class="img-fluid rounded-circle z-depth-1"
               alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
             </div>
-            {%- endif %}
+          {%- endif -%}
+          <div class="intro-info">
+            <h1 class="intro-name">{{ site.first_name }} {{ site.last_name }}</h1>
+            <p class="intro-sub">Ph.D. Candidate &middot; {{ page.subtitle }}</p>
+            <p class="intro-affil">Department of Educational Studies, Purdue University</p>
+            <p class="intro-links">
+              <a href="mailto:{{ site.email | encode_email }}" title="Email">Email</a>
+              <span class="sep">/</span>
+              <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener" title="Google Scholar">Scholar</a>
+              <span class="sep">/</span>
+              <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+              <span class="sep">/</span>
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+              <span class="sep">/</span>
+              <a href="https://orcid.org/{{ site.orcid_id }}" target="_blank" rel="noopener" title="ORCID">ORCID</a>
+            </p>
           </div>
-          {%- endif %}
+        </div>
 
+        <article>
           <div class="clearfix">
             {{ content }}
           </div>
