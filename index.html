@@ -38,7 +38,7 @@
     
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1781565352">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1781567881">
     <link rel="canonical" href="https://jinghuang.org/">
 
     <!-- Dark Mode -->
@@ -86,6 +86,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/publications/">Publications</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/presentations/">Presentations</a>
+              </li>
 <!--  -->
               <!-- Blog -->
               <!-- <li class="nav-item ">
@@ -118,10 +121,6 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/jinghuang-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/jinghuang-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/jinghuang-1400.webp"></source>
-    
 
     <!-- Fallback to the original file -->
     <img src="/assets/img/jinghuang.png" class="img-fluid rounded-circle z-depth-1" width="auto" height="auto" alt="jinghuang.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
@@ -152,40 +151,24 @@
           <div class="clearfix">
             <p>I am a Ph.D. candidate in <strong>Educational Psychology and Research Methodology</strong> at Purdue University, working under the guidance of Professor <a href="https://education.purdue.edu/about/directory/hua-hua-chang/" rel="external nofollow noopener" target="_blank">Hua-Hua Chang</a>.</p>
 
-<p>My research focuses on the <strong>continuous, dynamic monitoring of live test administration</strong>, closing the loop between test security and psychometric maintenance. My work spans three directions:</p>
-
-<style>
-.research-pillars { margin: 1.2rem 0; }
-.pillar {
-  border-left: 4px solid var(--pillar-color);
-  background: var(--pillar-bg);
-  padding: 0.6rem 0.9rem;
-  margin-bottom: 0.7rem;
-  border-radius: 4px;
-}
-.pillar-title { font-weight: 700; color: var(--pillar-color); margin-bottom: 0.2rem; }
-.pillar-detail { color: var(--global-text-color); font-size: 0.95rem; line-height: 1.5; }
-.pillar--examinee { --pillar-color: #e74c3c; --pillar-bg: rgba(231, 76, 60, 0.08); }
-.pillar--item     { --pillar-color: #16a085; --pillar-bg: rgba(22, 160, 133, 0.08); }
-.pillar--pool     { --pillar-color: #2e86de; --pillar-bg: rgba(46, 134, 222, 0.08); }
-</style>
+<p>My research focuses on the <strong>continuous, dynamic monitoring of live test administration, closing the loop between test security and psychometric maintenance</strong>. My work spans three directions (click each to see the related publications):</p>
 
 <div class="research-pillars">
-  <div class="pillar pillar--examinee">
+  <a class="pillar pillar--examinee" href="/publications/#examinee">
     <div class="pillar-title">🚨 Real-Time Examinee Monitoring</div>
     <div class="pillar-detail">Securing test integrity by using process data and behavioral telemetry to detect aberrant testing patterns and unauthorized AI assistance as they happen.</div>
-  </div>
-  <div class="pillar pillar--item">
+  </a>
+  <a class="pillar pillar--item" href="/publications/#item">
     <div class="pillar-title">🔍 Real-Time Item Health</div>
     <div class="pillar-detail">Ensuring continuous measurement precision by actively tracking item parameter drift and detecting compromised test content in live testing environments.</div>
-  </div>
-  <div class="pillar pillar--pool">
+  </a>
+  <a class="pillar pillar--pool" href="/publications/#pool">
     <div class="pillar-title">♻️ Real-Time Pool Replenishment</div>
     <div class="pillar-detail">Building "self-healing" item banks through online calibration, Automatic Item Generation (AIG), and LLM-driven similarity analysis to instantly replace exposed items.</div>
-  </div>
+  </a>
 </div>
 
-<p>My research has been recognized and supported by the <a href="https://www.purdue.edu/gradschool/fellowship/funding-resources-for-students/fellowships/managed-fellowships/recruitment-fellowships.html" rel="external nofollow noopener" target="_blank">Ross Fellowship</a> (2023–2026, 2027–2028) and the <strong>ETS Harold Gulliksen Psychometric Research Fellowship</strong> (2026–2027).</p>
+<p>My research has been recognized and supported by the <a href="https://www.purdue.edu/gradschool/fellowship/funding-resources-for-students/fellowships/managed-fellowships/recruitment-fellowships.html" rel="external nofollow noopener" target="_blank">Ross Fellowship</a> (2023–2026, 2027–2028) and the <strong><a href="https://www-stg.eu.ets.org/research/internship-fellowship/about/harold-gulliksen.html" rel="external nofollow noopener" target="_blank">ETS Harold Gulliksen Psychometric Research Fellowship</a></strong> (2026–2027).</p>
 
 <!-- I have been very fortunate to work with Prof. [Yunjun Gao](https://person.zju.edu.cn/en/gaoyj_en) at Zhejiang University <img src='/assets/img/zju_logo.svg' style="width: 4em;">, with Prof. [Zhikun Zhang](http://zhangzhk.com/) at Stanford University <img src='/assets/img/stanford_logo.svg' style="width: 4em;">, with Dr. [Jianxun Lian](https://www.microsoft.com/en-us/research/people/jialia) and Dr. [Xing Xie](https://www.microsoft.com/en-us/research/people/xingx/) at [Microsoft Research Asia](https://www.msra.cn/) <img src='/assets/img/microsoft_logo.svg' style="width: 4em;">. -->
 
@@ -201,52 +184,40 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
           <!-- News -->
           <h2><a href="/news/" style="color: inherit;">News</a></h2>          <div class="news">
-            <div class="table-responsive" style="max-height: 60vw">
-              <table class="table table-sm table-borderless">
+            <div class="news-list-wrap" style="max-height: 60vw; overflow-y: auto;">
+              <ul class="news-list">
               
-                <tr>
-                  <th scope="row">May 15, 2026</th>
-                  <td>
-                    I received the <strong><a href="https://www-stg.eu.ets.org/research/internship-fellowship/about/harold-gulliksen.html" rel="external nofollow noopener" target="_blank">ETS Harold Gulliksen Psychometric Research Fellowship</a></strong> (2026–2027).
+                <li>
+                  <span class="news-date">[2026.05]</span>
+                  I received the <strong><a href="https://www-stg.eu.ets.org/research/internship-fellowship/about/harold-gulliksen.html" rel="external nofollow noopener" target="_blank">ETS Harold Gulliksen Psychometric Research Fellowship</a></strong> (2026–2027).
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Apr 24, 2026</th>
-                  <td>
-                    My poster was selected as a winner of the <strong>Graduate Student Works-in-Progress eBoard Competition</strong> at the <strong>2026 NCME Annual Meeting</strong> in Los Angeles.
+                </li>
+                <li>
+                  <span class="news-date">[2026.04]</span>
+                  My poster was selected as a winner of the <strong>Graduate Student Works-in-Progress eBoard Competition</strong> at the <strong>2026 NCME Annual Meeting</strong> in Los Angeles.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Oct 1, 2025</th>
-                  <td>
-                    Two <strong>AERA</strong> and one <strong>NCME</strong> proposals were accepted. Looking forward to seeing you in LA in 2026!
+                </li>
+                <li>
+                  <span class="news-date">[2025.10]</span>
+                  Two <strong>AERA</strong> and one <strong>NCME</strong> proposals were accepted. Looking forward to seeing you in LA in 2026!
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Aug 1, 2025</th>
-                  <td>
-                    I started working as a Graduate Teaching Assistant in the <strong>Department of Educational Studies</strong>, supporting EDPS 32700: Classroom Assessment. I assist with course activities and instruction under the supervision of Dr. Anne Traynor.
+                </li>
+                <li>
+                  <span class="news-date">[2025.08]</span>
+                  I started working as a Graduate Teaching Assistant in the <strong>Department of Educational Studies</strong>, supporting EDPS 32700: Classroom Assessment. I assist with course activities and instruction under the supervision of Dr. Anne Traynor.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jul 1, 2025</th>
-                  <td>
-                    I received the <strong>2025 Psychometric Society Vector Travel Award</strong> for my work on automatic item generation.
+                </li>
+                <li>
+                  <span class="news-date">[2025.07]</span>
+                  I received the <strong>2025 Psychometric Society Vector Travel Award</strong> for my work on automatic item generation.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Aug 12, 2024</th>
-                  <td>
-                    I began my role as a Graduate Research Assistant in the <strong>School of Engineering Education</strong> (August 12, 2024 - May 31, 2025), focusing on data collection, analysis, and research dissemination under the supervision of Dr. Jason Morphew.
+                </li>
+                <li>
+                  <span class="news-date">[2024.08]</span>
+                  I began my role as a Graduate Research Assistant in the <strong>School of Engineering Education</strong> (August 12, 2024 - May 31, 2025), focusing on data collection, analysis, and research dissemination under the supervision of Dr. Jason Morphew.
 
-                  </td>
-                </tr>
-              </table>
+                </li>
+              </ul>
             </div>
           </div>
           <div style="margin-bottom: 0.5em;"></div> 
@@ -265,10 +236,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
                 <figure>
 
   <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/huang_adaptive_under_review-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/huang_adaptive_under_review-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/huang_adaptive_under_review-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -320,10 +287,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/huang_cognitive_under_review-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/huang_cognitive_under_review-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/huang_cognitive_under_review-1400.webp"></source>
-    
 
     <!-- Fallback to the original file -->
     <img src="/assets/img/publication_preview/huang_cognitive_under_review.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="huang_cognitive_under_review.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
@@ -350,7 +313,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
           <em>Applied Measurement in Education</em>, 2026
         </div>
         <div class="periodical">
-          Under review
+          Major revision
         </div>
 
           <!-- Links/Buttons -->
@@ -373,10 +336,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
                 <figure>
 
   <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/huang_dualdim_under_review-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/huang_dualdim_under_review-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/huang_dualdim_under_review-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -427,10 +386,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
                 <figure>
 
   <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/huang2025two-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/huang2025two-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/huang2025two-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
