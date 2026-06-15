@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*******************************************************************************
  * Variables used throughout the theme.
  * To adjust anything, simply edit the variables below and rebuild the theme.
@@ -5,6 +6,7 @@
 /*******************************************************************************
  * Themes
  ******************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --global-bg-color: #ffffff;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
@@ -1000,6 +1002,155 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   }
   d-article d-contents nav {
     grid-column: none;
+  }
+}
+/* =========================================================================
+   Custom theme — mirrors the reference site (jinghuang.org boyfriend style):
+   Lato font, blue (#1772d0) links with orange (#f09228) hover, uppercase
+   blue section headers, and a photo-left intro header with a text-link row.
+   Imported last in main.scss so these rules override the al-folio defaults.
+   ========================================================================= */
+/* Recolor the theme accent so links / nav / active states turn blue. */
+:root {
+  --global-theme-color: #1772d0;
+  --global-hover-color: #f09228;
+}
+
+/* ---- Typography ---- */
+body,
+p,
+li,
+td,
+th,
+a,
+.post,
+.navbar {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+}
+
+a {
+  color: #1772d0;
+}
+
+a:hover,
+a:focus {
+  color: #f09228;
+}
+
+/* ---- Intro header: profile photo on the left, info on the right ---- */
+.intro-header {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+  margin: 0.5rem 0 2rem;
+}
+
+.intro-photo {
+  flex-shrink: 0;
+  width: 170px;
+}
+
+.intro-photo img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.14);
+}
+
+.intro-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.intro-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem;
+}
+
+.intro-sub {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0.2rem 0;
+}
+
+.intro-affil {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.2rem 0;
+}
+
+.intro-links {
+  margin: 0.7rem 0 0;
+  font-size: 0.98rem;
+}
+
+.intro-links a {
+  color: #1772d0;
+  font-weight: 700;
+}
+
+.intro-links a:hover {
+  color: #f09228;
+}
+
+.intro-links .sep {
+  color: #bbb;
+  margin: 0 0.4rem;
+}
+
+/* ---- Section headers (News, Selected Publications, Honors, Services) ---- */
+.post > article h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #1772d0;
+  margin: 2.2rem 0 0.9rem;
+}
+
+.post > article h2 a {
+  color: inherit;
+}
+
+/* ---- Honors & Awards list ---- */
+ul.honors-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.4rem 0 1.6rem;
+}
+
+ul.honors-list li {
+  position: relative;
+  padding-left: 1.2em;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+ul.honors-list li::before {
+  content: "•";
+  color: #1772d0;
+  position: absolute;
+  left: 0;
+}
+
+/* ---- Responsive: stack the header on narrow screens ---- */
+@media (max-width: 600px) {
+  .intro-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+  .intro-name {
+    font-size: 2rem;
   }
 }
 
