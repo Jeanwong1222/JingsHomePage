@@ -28,11 +28,41 @@ honors: true
 services: true
 ---
 
-I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at Purdue University, working under the guidance of Professor [Hua-Hua Chang](https://education.purdue.edu/about/directory/hua-hua-chang/). My research focuses on psychometrics, educational measurement, statistical modeling, and large language models.
+I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at Purdue University, working under the guidance of Professor [Hua-Hua Chang](https://education.purdue.edu/about/directory/hua-hua-chang/).
 
-With a strong background in **Statistics** from East China Normal University and ongoing doctoral training at Purdue, I specialize in **online calibration**, **computerized adaptive testing (CAT)**, and **process data analysis**. My work aims to bridge methodological rigor with practical applications in educational settings.
+My research focuses on the **continuous, dynamic monitoring of live test administration**, closing the loop between test security and psychometric maintenance. My work spans three directions:
 
-My research has been recognized and supported by the [Ross Fellowship](https://www.purdue.edu/gradschool/fellowship/funding-resources-for-students/fellowships/managed-fellowships/recruitment-fellowships.html) (2023-2027) and the [2025 Psychometric Society Vector Travel Award](https://www.psychometricsociety.org/travel-award).
+<style>
+.research-pillars { margin: 1.2rem 0; }
+.pillar {
+  border-left: 4px solid var(--pillar-color);
+  background: var(--pillar-bg);
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.7rem;
+  border-radius: 4px;
+}
+.pillar-title { font-weight: 700; color: var(--pillar-color); margin-bottom: 0.2rem; }
+.pillar-detail { color: var(--global-text-color); font-size: 0.95rem; line-height: 1.5; }
+.pillar--examinee { --pillar-color: #e74c3c; --pillar-bg: rgba(231, 76, 60, 0.08); }
+.pillar--item     { --pillar-color: #16a085; --pillar-bg: rgba(22, 160, 133, 0.08); }
+.pillar--pool     { --pillar-color: #2e86de; --pillar-bg: rgba(46, 134, 222, 0.08); }
+</style>
+<div class="research-pillars">
+  <div class="pillar pillar--examinee">
+    <div class="pillar-title">🚨 Real-Time Examinee Monitoring</div>
+    <div class="pillar-detail">Securing test integrity by using process data and behavioral telemetry to detect aberrant testing patterns and unauthorized AI assistance as they happen.</div>
+  </div>
+  <div class="pillar pillar--item">
+    <div class="pillar-title">🔍 Real-Time Item Health</div>
+    <div class="pillar-detail">Ensuring continuous measurement precision by actively tracking item parameter drift and detecting compromised test content in live testing environments.</div>
+  </div>
+  <div class="pillar pillar--pool">
+    <div class="pillar-title">♻️ Real-Time Pool Replenishment</div>
+    <div class="pillar-detail">Building "self-healing" item banks through online calibration, Automatic Item Generation (AIG), and LLM-driven similarity analysis to instantly replace exposed items.</div>
+  </div>
+</div>
+
+My research has been recognized and supported by the [Ross Fellowship](https://www.purdue.edu/gradschool/fellowship/funding-resources-for-students/fellowships/managed-fellowships/recruitment-fellowships.html) (2023–2026, 2027–2028) and the **ETS Harold Gulliksen Psychometric Research Fellowship** (2026–2027).
 
 
 
