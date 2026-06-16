@@ -234,6 +234,15 @@ ul.news-list .news-date {
   max-width: 100%;
 }
 
+/* ---- Experiences page: let long date badges wrap instead of overflowing into the title ---- */
+.cv .badge {
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.25;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
 /* ---- Responsive: stack the header and pillars on narrow screens ---- */
 @media (max-width: 600px) {
   .intro-header {
