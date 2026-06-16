@@ -14,7 +14,7 @@ nav_order: 1
   <h2 id="examinee" class="research-line line--examinee">🚨 Real-Time Examinee Monitoring</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=examinee] %}
 
-  <h2 id="item" class="research-line line--item">🔍 Real-Time Item Health</h2>
+  <h2 id="item" class="research-line line--item">🔍 Real-Time Item Supervision</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=item] %}
 
   <h2 id="pool" class="research-line line--pool">♻️ Real-Time Pool Replenishment</h2>

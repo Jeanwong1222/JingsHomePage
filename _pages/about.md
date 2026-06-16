@@ -35,10 +35,10 @@ My research focuses on the **continuous, dynamic monitoring of live test adminis
 <div class="research-pillars">
   <a class="pillar pillar--examinee" href="{{ '/publications/' | relative_url }}#examinee">
     <div class="pillar-title">🚨 Real-Time Examinee Monitoring</div>
-    <div class="pillar-detail">Securing test integrity by using process data and behavioral telemetry to detect aberrant testing patterns and unauthorized AI assistance as they happen.</div>
+    <div class="pillar-detail">Securing test integrity by using process data to detect aberrant testing patterns and unauthorized AI assistance as they happen.</div>
   </a>
   <a class="pillar pillar--item" href="{{ '/publications/' | relative_url }}#item">
-    <div class="pillar-title">🔍 Real-Time Item Health</div>
+    <div class="pillar-title">🔍 Real-Time Item Supervision</div>
     <div class="pillar-detail">Ensuring continuous measurement precision by actively tracking item parameter drift and detecting compromised test content in live testing environments.</div>
   </a>
   <a class="pillar pillar--pool" href="{{ '/publications/' | relative_url }}#pool">
