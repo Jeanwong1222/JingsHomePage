@@ -1,0 +1,69 @@
+# Experiences page data (rendered by _pages/experiences.md via _includes/cv/time_table.html)
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    # TODO: 2026 summer research internship — add once Jing provides
+    #       organization, exact title, dates, location, and 1–2 line description.
+    # - title: Summer Research Intern
+    #   institution: <organization>, <location>
+    #   year: <May. 2026 – Aug. 2026>
+    #   description:
+    #     - <short professional description>
+    - title: Graduate Teaching Assistant
+      institution: Department of Educational Studies, Purdue University
+      year: Aug. 2025 – Present
+      description:
+        - Support EDPS 32700 (Classroom Assessment), assisting with instruction and course activities under Dr. Anne Traynor.
+    - title: Graduate Research Assistant
+      institution: School of Engineering Education, Purdue University
+      year: Aug. 2024 – Jul. 2025
+      description:
+        - Developed and refined CD-CAT algorithms and conducted simulation studies.
+        - Performed psychometric analyses on operational datasets to support ongoing research.
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Research Assistant
+      institution: Purdue University (NSF Grant No. 2141847)
+      year: Dec. 2023 – Present
+      description:
+        - Lead CD-CAT parameter estimation and item-selection optimization.
+        - Lead online calibration and CAT tuning procedures, and support LASSO-platform data analysis and mathematics cognitive-diagnosis development.
+    - title: Volunteer Statistical Consultant
+      institution: Psychometric Investigation Laboratory, Purdue University
+      year: Dec. 2023 – Present
+      description:
+        - Advise researchers on statistical methods, research design, and data management.
+        - Deliver workshops on applying machine learning to educational data.
+    - title: Research Assistant, Classroom Interaction Analysis
+      institution: East China Normal University
+      year: Apr. 2022 – Jun. 2023
+      description:
+        - Analyzed classroom interaction patterns from video data (Suzhou micro-monitoring project).
+    - title: Research Assistant, Clinical Pharmacist Training Evaluation
+      institution: Chinese Hospital Association (partnership project)
+      year: Jul. 2021 – Sept. 2021
+      description:
+        - Evaluated trainee satisfaction using ordinal logistic regression.
+    - title: Research Assistant, Student Creativity Study
+      institution: East China Normal University
+      year: Apr. 2021 – May 2022
+      description:
+        - Modeled creativity data from 4,833 students across 48 schools using Rasch analysis.
+    - title: Research Assistant, Conceptual Understanding Project
+      institution: East China Normal University
+      year: Dec. 2020 – Aug. 2023
+      description:
+        - Conducted systematic literature reviews on conceptual understanding in education.
+    - title: Research Assistant, Quality-of-Life Survey Studies
+      institution: East China Normal University
+      year: Sept. 2019 – Jun. 2020; Jul. 2018 – Dec. 2018
+      description:
+        - Conducted data analysis for quality-of-life surveys and program-evaluation reports.
+    - title: Research Assistant, International-Student Perception Study
+      institution: East China Normal University
+      year: Sept. 2016 – Sept. 2017
+      description:
+        - Interviewed 17 international students on their perceptions of Shanghai.
