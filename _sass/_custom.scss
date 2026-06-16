@@ -172,18 +172,28 @@ ul.news-list .news-date {
 }
 .research-pillars .pillar:hover {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-  transform: translateY(-2px);
   text-decoration: none;
 }
 .research-pillars .pillar-title {
   font-weight: 700;
   color: var(--pillar-color);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
 }
+/* Description hidden by default, revealed on hover (like the reference site) */
 .research-pillars .pillar-detail {
   color: var(--global-text-color);
   font-size: 0.92rem;
   line-height: 1.5;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.2s ease;
+}
+.research-pillars .pillar:hover .pillar-detail {
+  max-height: 240px;
+  margin-top: 0.4rem;
+  opacity: 1;
 }
 .pillar--examinee { --pillar-color: #e74c3c; --pillar-bg: rgba(231, 76, 60, 0.08); }
 .pillar--item     { --pillar-color: #16a085; --pillar-bg: rgba(22, 160, 133, 0.08); }
@@ -211,6 +221,19 @@ ul.news-list .news-date {
 .line--chapter  { --line-color: #8e44ad; --line-bg: rgba(142, 68, 173, 0.08); }
 .line--wip      { --line-color: #b8860b; --line-bg: rgba(184, 134, 11, 0.08); }
 
+/* ---- Presentations page: numbered list, flush-left (no empty image column) ---- */
+.presentations-list ol.bibliography {
+  list-style: decimal;
+  padding-left: 1.6rem;
+}
+.presentations-list ol.bibliography li .col-sm-2 {
+  display: none;
+}
+.presentations-list ol.bibliography li .col-sm-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 /* ---- Responsive: stack the header and pillars on narrow screens ---- */
 @media (max-width: 600px) {
   .intro-header {
@@ -223,5 +246,11 @@ ul.news-list .news-date {
   }
   .research-pillars {
     flex-direction: column;
+  }
+  /* No hover on touch: always show the pillar descriptions */
+  .research-pillars .pillar-detail {
+    max-height: 240px;
+    margin-top: 0.4rem;
+    opacity: 1;
   }
 }
