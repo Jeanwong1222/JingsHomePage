@@ -3,13 +3,12 @@
 - title: Professional Experience
   type: time_table
   contents:
-    # TODO: 2026 summer research internship — add once Jing provides
-    #       organization, exact title, dates, location, and 1–2 line description.
-    # - title: Summer Research Intern
-    #   institution: <organization>, <location>
-    #   year: <May. 2026 – Aug. 2026>
-    #   description:
-    #     - <short professional description>
+    - title: Psychometric Research Intern
+      institution: National Commission on Certification of Physician Assistants (NCCPA)
+      year: Jun. 2026 – Present
+      description:
+        - Support psychometric research on assessment quality, test security, and data-driven monitoring for certification examinations.
+        - Collaborate with researchers to examine methodological approaches that strengthen the validity, fairness, and security of high-stakes assessments.
     - title: Graduate Teaching Assistant
       institution: Department of Educational Studies, Purdue University
       year: Aug. 2025 – Present

@@ -2,3 +2,9 @@
   items:
     - "Journal of Computerized Adaptive Testing (2025)"
     - "Psychometrika (2025, 2026)"
+- title: Conference Reviewer
+  items:
+    - name: "2026 NCME Artificial Intelligence in Measurement and Education Conference (AIME–Con)"
+      subitems:
+        - "AIME-Con Paper/Poster Session Review Module (5 proposals)"
+        - "AIME-Con Innovation Demonstration Review Module (2 proposals)"
