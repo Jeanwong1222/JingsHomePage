@@ -1306,8 +1306,18 @@ ul.news-list .news-date {
 
 .pub-byyear .pub-box ol.bibliography {
   list-style: decimal;
-  padding-left: 1.6rem;
+  padding-left: 1.8rem;
   margin: 0.4rem 0;
+}
+
+/* Tight spacing between same-year entries; a wider gap at each year boundary
+   (the .year-break class is added by the script in publications.md). */
+.pub-byyear .pub-box ol.bibliography > li {
+  margin-bottom: 0.4rem;
+}
+
+.pub-byyear .pub-box ol.bibliography > li.year-break {
+  margin-top: 1.6rem;
 }
 
 /* Drop the preview-image / badge column and let the citation span the full width */
