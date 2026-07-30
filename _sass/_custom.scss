@@ -221,6 +221,29 @@ ul.news-list .news-date {
 .line--chapter  { --line-color: #8e44ad; --line-bg: rgba(142, 68, 173, 0.08); }
 .line--wip      { --line-color: #b8860b; --line-bg: rgba(184, 134, 11, 0.08); }
 
+/* ---- Publications (by-year): type sections in framed boxes, numbered, no thumbnails ---- */
+.pub-byyear .pub-section {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 2.4rem 0 1rem;
+}
+.pub-byyear .pub-box {
+  border-left: 5px solid #1772d0;
+  background: #f7f8fa;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  margin-bottom: 2.2rem;
+}
+.pub-byyear .pub-box ol.bibliography {
+  list-style: decimal;
+  padding-left: 1.6rem;
+  margin: 0.4rem 0;
+}
+/* Drop the preview-image / badge column and let the citation span the full width */
+.pub-byyear .pub-box ol.bibliography li .col-sm-2 { display: none; }
+.pub-byyear .pub-box ol.bibliography li .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
+
 /* ---- Presentations page: numbered list, flush-left (no empty image column) ---- */
 .presentations-list ol.bibliography {
   list-style: decimal;
