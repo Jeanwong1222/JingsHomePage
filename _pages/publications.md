@@ -7,26 +7,32 @@ nav_order: 1
 ---
 <!-- _pages/publications.md -->
 
-<p class="pub-intro">Journal articles, organized by my three research directions and listed in reverse-chronological order within each.</p>
+<p class="pub-intro">Journal articles and book chapters, listed in reverse-chronological order. You can also <a href="{{ '/publications-by-topic/' | relative_url }}">browse publications by topic</a>.</p>
 
 <div class="publications">
 
-  <h2 id="examinee" class="research-line line--examinee">🚨 Real-Time Examinee Monitoring</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=examinee] %}
-
-  <h2 id="item" class="research-line line--item">🔍 Real-Time Item Supervision</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=item] %}
-
-  <h2 id="pool" class="research-line line--pool">♻️ Real-Time Pool Replenishment</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=pool] %}
-
-  <h2 id="other" class="research-line line--other">Other Research</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=other] %}
-
-  <h2 id="chapters" class="research-line line--chapter">Book Chapters</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @incollection %}
-
-  <h2 id="wip" class="research-line line--wip">Works in Progress</h2>
+  <h2 class="year">Works in Progress</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @unpublished %}
+
+  <h2 class="year">Under Review / In Revision</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @article[year=2026] %}
+
+  <h2 class="year">2025</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @article[year=2025] %}
+
+  <h2 class="year">2024</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @article[year=2024] %}
+
+  <h2 class="year">2022</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @article[year=2022] %}
+
+  <h2 class="year">2021</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @article[year=2021] %}
+
+  <h2 class="year">2020</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @article[year=2020] %}
+
+  <h2 class="year">Book Chapters</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @incollection %}
 
 </div>
