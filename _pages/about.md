@@ -33,15 +33,15 @@ I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at
 My research focuses on the **continuous, dynamic monitoring of live test administration, closing the loop between test security and psychometric maintenance**. My work spans three directions (click each to see the related publications):
 
 <div class="research-pillars">
-  <a class="pillar pillar--examinee" href="{{ '/publications/' | relative_url }}#examinee">
+  <a class="pillar pillar--examinee" href="{{ '/publications-by-topic/' | relative_url }}#examinee">
     <div class="pillar-title">🚨 Real-Time Examinee Monitoring</div>
     <div class="pillar-detail">Securing test integrity by using process data to detect aberrant testing patterns and unauthorized AI assistance as they happen.</div>
   </a>
-  <a class="pillar pillar--item" href="{{ '/publications/' | relative_url }}#item">
+  <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
     <div class="pillar-title">🔍 Real-Time Item Supervision</div>
     <div class="pillar-detail">Ensuring continuous measurement precision by actively tracking item parameter drift and detecting compromised test content in live testing environments.</div>
   </a>
-  <a class="pillar pillar--pool" href="{{ '/publications/' | relative_url }}#pool">
+  <a class="pillar pillar--pool" href="{{ '/publications-by-topic/' | relative_url }}#pool">
     <div class="pillar-title">♻️ Real-Time Pool Replenishment</div>
     <div class="pillar-detail">Building "self-healing" item banks through online calibration, Automatic Item Generation (AIG), and LLM-driven similarity analysis to instantly replace exposed items.</div>
   </a>
