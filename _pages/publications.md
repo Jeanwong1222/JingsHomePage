@@ -29,20 +29,28 @@ nav_order: 1
 </div>
 
 <script>
+// Applies spacing + reversed numbering as INLINE styles so the layout is
+// correct even when an old main.css is still cached by the browser/CDN.
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.pub-byyear .pub-box ol.bibliography').forEach(function (ol) {
     // Count down so the newest (top) entry carries the largest number,
-    // making the total publication count visible at a glance.
+    // surfacing the total publication count at a glance.
     ol.setAttribute('reversed', 'reversed');
-    // Widen the gap wherever the publication year changes.
+
+    var items = ol.querySelectorAll(':scope > li');
     var prevYear = null;
-    ol.querySelectorAll(':scope > li').forEach(function (li) {
+    items.forEach(function (li) {
+      // Tight gap between entries of the same year.
+      li.style.marginBottom = '0.3rem';
+
       var per = li.querySelector('.periodical');
       var text = per ? per.textContent : li.textContent;
       var m = text.match(/\b(20|19)\d{2}\b/);
       var year = m ? m[0] : null;
+
+      // Wider gap whenever the publication year changes.
       if (prevYear !== null && year !== null && year !== prevYear) {
-        li.classList.add('year-break');
+        li.style.marginTop = '1.7rem';
       }
       if (year !== null) prevYear = year;
     });
