@@ -1,0 +1,36 @@
+<!-- site_header.html: persistent profile header + nav menu (shown on every page) -->
+<div class="site-header">
+
+  <div class="intro-header">
+    <div class="intro-photo">
+      {% include figure.html
+        path='assets/img/jinghuang.png'
+        class='img-fluid rounded-circle z-depth-1'
+        alt='Jing Huang' %}
+    </div>
+    <div class="intro-info">
+      <h1 class="intro-name">{{ site.first_name }} {{ site.last_name }}</h1>
+      <p class="intro-sub">Ph.D. Candidate &middot; Educational Psychology &amp; Research Methodology</p>
+      <p class="intro-affil">Department of Educational Studies, Purdue University</p>
+      <p class="intro-links">
+        <a href="mailto:{{ site.email | encode_email }}" title="Email">Email</a>
+        <span class="sep">/</span>
+        <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener" title="Google Scholar">Scholar</a>
+        <span class="sep">/</span>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+        <span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+        <span class="sep">/</span>
+        <a href="https://orcid.org/{{ site.orcid_id }}" target="_blank" rel="noopener" title="ORCID">ORCID</a>
+      </p>
+    </div>
+  </div>
+
+  <nav class="nav-menu">
+    <a href="{{ '/' | relative_url }}" class="{% if page.permalink == '/' %}active{% endif %}">Home</a>
+    <a href="{{ '/publications/' | relative_url }}" class="{% if page.permalink == '/publications/' or page.permalink == '/publications-by-topic/' %}active{% endif %}">Publications</a>
+    <a href="{{ '/presentations/' | relative_url }}" class="{% if page.permalink == '/presentations/' %}active{% endif %}">Presentations</a>
+    <a href="{{ '/experiences/' | relative_url }}" class="{% if page.permalink == '/experiences/' %}active{% endif %}">Experiences</a>
+  </nav>
+
+</div>

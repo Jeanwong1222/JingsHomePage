@@ -10,13 +10,14 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-
-    <!-- Header -->
-    {%- include header.html %}
+  <body class="{% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div class="container">
+
+      <!-- Persistent profile header + nav menu (replaces the top navbar) -->
+      {%- include site_header.html %}
+
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
