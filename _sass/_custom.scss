@@ -221,32 +221,22 @@ ul.news-list .news-date {
 .line--chapter  { --line-color: #8e44ad; --line-bg: rgba(142, 68, 173, 0.08); }
 .line--wip      { --line-color: #b8860b; --line-bg: rgba(184, 134, 11, 0.08); }
 
-/* ---- Publications (by-year): type sections in framed boxes, numbered, no thumbnails ---- */
-.pub-byyear .pub-section {
-  text-align: center;
+/* ---- Publications (by-year): clean year headings, numbered list, no thumbnails ---- */
+.pub-byyear .pub-year {
   font-weight: 700;
-  font-size: 1.6rem;
-  margin: 2.4rem 0 1rem;
+  font-size: 1.4rem;
+  margin: 2rem 0 0.8rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--global-divider-color, #e6e6e6);
 }
-.pub-byyear .pub-box {
-  border-left: 5px solid #1772d0;
-  background: #f7f8fa;
-  border-radius: 8px;
-  padding: 0.6rem 1.4rem;
-  margin-bottom: 2.2rem;
-}
-.pub-byyear .pub-box ol.bibliography {
+.pub-byyear ol.bibliography {
   list-style: decimal;
   padding-left: 1.8rem;
-  margin: 0.4rem 0;
+  margin: 0.4rem 0 0;
 }
-/* Tight spacing between same-year entries; a wider gap at each year boundary
-   (the .year-break class is added by the script in publications.md). */
-.pub-byyear .pub-box ol.bibliography > li { margin-bottom: 0.4rem; }
-.pub-byyear .pub-box ol.bibliography > li.year-break { margin-top: 1.6rem; }
 /* Drop the preview-image / badge column and let the citation span the full width */
-.pub-byyear .pub-box ol.bibliography li .col-sm-2 { display: none; }
-.pub-byyear .pub-box ol.bibliography li .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
+.pub-byyear ol.bibliography li .col-sm-2 { display: none; }
+.pub-byyear ol.bibliography li .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
 
 /* ---- Presentations page: numbered list, flush-left (no empty image column) ---- */
 .presentations-list ol.bibliography {
