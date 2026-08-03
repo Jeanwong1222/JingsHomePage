@@ -36,9 +36,14 @@ a:focus {
   color: #f09228;
 }
 
+/* ---- Narrower overall column, like the reference site (~800px, centered) ---- */
+body .container {
+  max-width: 820px;
+}
+
 /* ---- Persistent site header (photo + info + nav), shown on every page ---- */
 .site-header {
-  padding-top: 1.6rem;
+  padding-top: 2.8rem;   /* blank space above the photo, not flush to the top */
   margin-bottom: 1.9rem;
 }
 /* ---- Intro header: profile photo on the left, info on the right ---- */
