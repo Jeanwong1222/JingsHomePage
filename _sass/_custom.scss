@@ -221,22 +221,52 @@ ul.news-list .news-date {
 .line--chapter  { --line-color: #8e44ad; --line-bg: rgba(142, 68, 173, 0.08); }
 .line--wip      { --line-color: #b8860b; --line-bg: rgba(184, 134, 11, 0.08); }
 
-/* ---- Publications (by-year): clean year headings, numbered list, no thumbnails ---- */
+/* ---- Publications (by-year): typography copied from reference site (yuntaodu.me / barron.css) ---- */
+.pub-byyear {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+/* Year / section headings: bold, body-sized, dark grey, no border, generous top gap */
 .pub-byyear .pub-year {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
-  margin: 2rem 0 0.8rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid var(--global-divider-color, #e6e6e6);
+  font-size: 15px;
+  color: #333;
+  text-transform: none;
+  letter-spacing: 0;
+  border: 0;
+  padding: 0;
+  margin: 30px 0 15px;
 }
+/* Entry list: disc bullets, like the reference */
 .pub-byyear ol.bibliography {
-  list-style: decimal;
-  padding-left: 1.8rem;
-  margin: 0.4rem 0 0;
+  list-style: disc;
+  padding-left: 28px;
+  margin: 0;
 }
-/* Drop the preview-image / badge column and let the citation span the full width */
+.pub-byyear ol.bibliography li {
+  margin: 16px 0;
+  line-height: 1.7;
+  font-size: 15px;
+  color: #000;
+}
+/* Drop the preview-image / badge column; let the citation span the full width */
 .pub-byyear ol.bibliography li .col-sm-2 { display: none; }
 .pub-byyear ol.bibliography li .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
+/* Title bold; authors plain; venue italic dark-grey */
+.pub-byyear .title { font-weight: 700; font-size: 15px; color: #1a1a1a; }
+.pub-byyear .author { font-size: 15px; color: #000; }
+.pub-byyear .periodical { font-size: 15px; color: #333; }
+/* The status line ("Under review" / "Major revision"): smaller, muted */
+.pub-byyear .periodical + .periodical { font-size: 13px; color: #777; }
+/* Render the link "buttons" as plain inline links (reference has no button chrome) */
+.pub-byyear .links a.btn {
+  border: 0;
+  padding: 0;
+  margin-right: 0.7rem;
+  font-size: 14px;
+  color: #1772d0;
+}
+.pub-byyear .links a.btn:hover { color: #f09228; }
 
 /* ---- Presentations page: numbered list, flush-left (no empty image column) ---- */
 .presentations-list ol.bibliography {
