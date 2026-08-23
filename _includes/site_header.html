@@ -3,10 +3,8 @@
 
   <div class="intro-header">
     <div class="intro-photo">
-      {% include figure.html
-        path='assets/img/jinghuang.jpg'
-        class='img-fluid rounded-circle z-depth-1'
-        alt='Jing Huang' %}
+      <img src="{{ '/assets/img/jinghuang.jpg' | relative_url }}?v={{ site.time | date: '%s' }}"
+           class="img-fluid rounded-circle z-depth-1" alt="Jing Huang" />
     </div>
     <div class="intro-info">
       <h1 class="intro-name">{{ site.first_name }} {{ site.last_name }}</h1>
