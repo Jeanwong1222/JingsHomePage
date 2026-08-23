@@ -18,7 +18,7 @@
 \usepackage{needspace}
 
 % ---- Professional navy accent (replaces the reference's blue) -------------
-\definecolor{accent}{HTML}{1F3864}   % professional navy — standard for academic CVs
+\definecolor{accent}{HTML}{1F4E79}   % professional navy (a touch lighter; Office-standard dark blue)
 \definecolor{textdark}{HTML}{1A1A1A}
 \definecolor{textgray}{HTML}{333333}
 
@@ -30,7 +30,7 @@
 % ---- Section heading: bold small-caps accent + navy rule to the margin ----
 \renewcommand{\section}[1]{%
   \needspace{3\baselineskip}\vspace{12pt}\par
-  {\large\bfseries\scshape\color{accent}#1}\hspace{6pt}%
+  {\fontsize{13.5}{16}\selectfont\bfseries\scshape\color{accent}#1}\hspace{6pt}%
   {\color{accent}\leaders\hrule height 0.8pt\hfill\kern0pt}\par\vspace{6pt}}
 
 % ---- Entry helpers --------------------------------------------------------
@@ -113,7 +113,7 @@ Test security, real-time item monitoring, item pool maintenance, computerized ad
 
 % ---- 5. Publications -----------------------------------------------------
 \section{Publications}
-{\small\itshape $^{*}$ equal contribution.}\par\vspace{4pt}
+{\itshape $^{*}$\,Equal contribution.}\par\vspace{4pt}
 \begin{pubs}
 \item \me{Huang, J.}, \& Chang, H.-H. (2026). Real-Time Monitoring of Item Parameter Drift in CD-CAT via Adaptive CUSUM Charts. \textit{Psychometrika}, 1--61. \url{https://doi.org/10.1017/psy.2026.10140}
 \item Chang, H.-H., \me{Huang, J.}, Zhang, Y.~X., Wang, X.~Y., Le, V., Mehrabi, A., Salazar, A., Morphew, J.~W., Nissen, J.~M., \& Van Dusen, B. (major revision). How We Know What Students Know: Rethinking College STEM Assessments with CD-CATs. \textit{Psychometrika}.
