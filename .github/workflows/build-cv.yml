@@ -1,0 +1,44 @@
+name: build-cv
+
+# Recompiles the LaTeX CV to a PDF whenever cv/ changes, and commits the
+# refreshed PDF into assets/pdf/ (which the site serves). Kept separate from
+# deploy.yml so a LaTeX error can never break the website deploy.
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'cv/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile CV (LaTeX)
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: cv
+          root_file: Jing_Huang_CV.tex
+
+      - name: Publish PDF into assets
+        run: |
+          mkdir -p assets/pdf
+          cp cv/Jing_Huang_CV.pdf assets/pdf/Jing_Huang_CV.pdf
+
+      - name: Commit refreshed PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/pdf/Jing_Huang_CV.pdf
+          if git diff --staged --quiet; then
+            echo "CV PDF unchanged."
+          else
+            git commit -m "Rebuild CV PDF from cv/Jing_Huang_CV.tex"
+            git push
+          fi
