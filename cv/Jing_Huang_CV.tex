@@ -1,7 +1,7 @@
 %=======================================================================
 %  Jing Huang — Curriculum Vitae
 %  Style modeled on a clean academic CV (small-caps ruled section heads,
-%  two-column entries, right-aligned dates), with a professional gold accent.
+%  two-column entries, right-aligned dates), with a professional navy accent.
 %  Compile: pdflatex (run twice).  Auto-built in CI (see .github/workflows).
 %=======================================================================
 \documentclass[10.5pt,letterpaper]{article}
@@ -14,10 +14,11 @@
 \usepackage{enumitem}
 \usepackage{fontawesome5}
 \usepackage{hyperref}
+\usepackage{xurl}       % allow long DOIs/URLs to break across lines
 \usepackage{needspace}
 
-% ---- Professional gold accent (replaces the reference's blue) -------------
-\definecolor{accent}{HTML}{B8860B}   % dark goldenrod — readable, warm
+% ---- Professional navy accent (replaces the reference's blue) -------------
+\definecolor{accent}{HTML}{1F3864}   % professional navy — standard for academic CVs
 \definecolor{textdark}{HTML}{1A1A1A}
 \definecolor{textgray}{HTML}{333333}
 
@@ -26,7 +27,7 @@
 \setlength{\parindent}{0pt}
 \color{textgray}
 
-% ---- Section heading: bold small-caps accent + gold rule to the margin ----
+% ---- Section heading: bold small-caps accent + navy rule to the margin ----
 \renewcommand{\section}[1]{%
   \needspace{3\baselineskip}\vspace{12pt}\par
   {\large\bfseries\scshape\color{accent}#1}\hspace{6pt}%
@@ -86,10 +87,10 @@ Test security, real-time item monitoring, item pool maintenance, computerized ad
 
 % ---- 3. Honors and Awards ------------------------------------------------
 \section{Honors and Awards}
-\row{ETS Harold Gulliksen Psychometric Research Fellowship}{Aug. 2026}
+\row{\textbf{ETS Harold Gulliksen Psychometric Research Fellowship}}{Aug. 2026}
 \row{NCME Graduate Student Works-in-Progress eBoard Competition, Award Winner}{Apr. 2026}
 \row{Psychometric Society Vector Travel Award}{Jul. 2025}
-\row{Ross Fellowship, Purdue University}{Mar. 2023}
+\row{\textbf{Ross Fellowship, Purdue University}}{Mar. 2023}
 \row{National Scholarship (12 of 6461), Ministry of Finance \& Ministry of Education, China}{Oct. 2022}
 \row{Excellent Graduate (101 of 6461), East China Normal University}{Oct. 2022}
 \row{Shu Qing Encouragement Scholarship (22 of 6461), East China Normal University}{Oct. 2021}
@@ -114,16 +115,16 @@ Test security, real-time item monitoring, item pool maintenance, computerized ad
 \section{Publications}
 {\small\itshape $^{*}$ equal contribution.}\par\vspace{4pt}
 \begin{pubs}
-\item \me{Huang, J.}, \& Chang, H.-H. (2026). Real-Time Monitoring of Item Parameter Drift in CD-CAT via Adaptive CUSUM Charts. \textit{Psychometrika}, 1--61. \href{https://doi.org/10.1017/psy.2026.10140}{https://doi.org/10.1017/psy.2026.10140}
+\item \me{Huang, J.}, \& Chang, H.-H. (2026). Real-Time Monitoring of Item Parameter Drift in CD-CAT via Adaptive CUSUM Charts. \textit{Psychometrika}, 1--61. \url{https://doi.org/10.1017/psy.2026.10140}
 \item Chang, H.-H., \me{Huang, J.}, Zhang, Y.~X., Wang, X.~Y., Le, V., Mehrabi, A., Salazar, A., Morphew, J.~W., Nissen, J.~M., \& Van Dusen, B. (major revision). How We Know What Students Know: Rethinking College STEM Assessments with CD-CATs. \textit{Psychometrika}.
 \item \me{Huang, J.}, \& Chang, H.-H. (major revision). A Cognitive Design System Approach to Enhancing Cognitive Alignment and Difficulty Control in Gen-AI Item Generation. \textit{Applied Measurement in Education}.
 \item \me{Huang, J.}, Zhang, J.~H., \& Chang, H.-H. (under review). A Dual-Dimensional LLM Framework for Automated Item Incidental Content Similarity Analysis in Large-Scale Assessments. \textit{Applied Measurement in Education}.
 \item Tao, Y.$^{*}$, \me{Huang, J.}$^{*}$, \& Yang, X.~D. (major revision). What Drives Students' Everyday Creativity? \textit{Thinking Skills and Creativity}.
 \item Zhang, J.~H., Liang, X.~Y., \& \me{Huang, J.} (major revision). A Multi-Agent Large Language Model Framework for Automated Q-Matrix Generation. \textit{Psychometrika}.
-\item \me{Huang, J.}, Zhang, Y.~X., Morphew, J.~W., Nissen, J.~M., Van Dusen, B., \& Chang, H.-H. (2025). Two-phase Content-balancing CD-CAT Online Item Calibration. \textit{Journal of Educational Measurement, 62}(4), 787--808.
-\item \me{Huang, J.}, Xin, Y.~P., \& Chang, H.-H. (2025). The Application of Machine Learning to Educational Process Data Analysis: A Systematic Review. \textit{Education Sciences, 15}(7), 888.
-\item Mo, F., \me{Huang, J.}, Yang, Y., \"{O}zen, Z., Maeda, Y., \& Olenchak, F.~R. (2025). Undergraduate Students' Learning Outcomes with ChatGPT: A Meta-Analytic Study. \textit{Computers and Education: Artificial Intelligence}, 100536.
-\item Zheng, C., Liu, J., Li, Y., Xu, P., Zhang, B., Wei, R., Liu, B., \& \me{Huang, J.} (2024). A 2PLM-RANK Multidimensional Forced-Choice Model and Its Fast Estimation Algorithm. \textit{Behavior Research Methods}, 1--26.
+\item \me{Huang, J.}, Zhang, Y.~X., Morphew, J.~W., Nissen, J.~M., Van Dusen, B., \& Chang, H.-H. (2025). Two-phase Content-balancing CD-CAT Online Item Calibration. \textit{Journal of Educational Measurement, 62}(4), 787--808. \url{https://doi.org/10.1111/jedm.70012}
+\item \me{Huang, J.}, Xin, Y.~P., \& Chang, H.-H. (2025). The Application of Machine Learning to Educational Process Data Analysis: A Systematic Review. \textit{Education Sciences, 15}(7), 888. \url{https://doi.org/10.3390/educsci15070888}
+\item Mo, F., \me{Huang, J.}, Yang, Y., \"{O}zen, Z., Maeda, Y., \& Olenchak, F.~R. (2025). Undergraduate Students' Learning Outcomes with ChatGPT: A Meta-Analytic Study. \textit{Computers and Education: Artificial Intelligence}, 100536. \url{https://doi.org/10.1016/j.caeai.2025.100536}
+\item Zheng, C., Liu, J., Li, Y., Xu, P., Zhang, B., Wei, R., Liu, B., \& \me{Huang, J.} (2024). A 2PLM-RANK Multidimensional Forced-Choice Model and Its Fast Estimation Algorithm. \textit{Behavior Research Methods}, 1--26. \url{https://doi.org/10.3758/s13428-023-02315-x}
 \item Yang, X., \me{Huang, J.}, Chen, X., \& Su, X. (2022). A Conceptual Analysis of Conceptual Understanding. \textit{Exploring Education Development, 20}, 54--68. (in Chinese)
 \item Li, Q., \me{Huang, J.}, \& Xu, X. (2021). Relationship Between COVID-19 Infection Pneumonia and Traditional Chinese Medicinal Materials. \textit{Chinese Journal of Medical Library and Information Science, 30}(01), 17--24. (in Chinese)
 \item \me{Huang, J.}, \& Xu, X. (2020). Research on the Influential Factors of Public Perception and Attitudes to COVID-19: Based on the Citizen Survey of Shanghai. \textit{Library Journal, 39}(12), 98--106. (in Chinese)
@@ -133,17 +134,11 @@ Test security, real-time item monitoring, item pool maintenance, computerized ad
 % ---- 6. Book Chapters ----------------------------------------------------
 \section{Book Chapters}
 \begin{pubs}
-\item Zhang, Y.~X., \me{Huang, J.}, \& Chang, H.-H. (2025). Innovative Computerized Test Items. In \textit{Encyclopedia of Social Measurement}. Elsevier. \href{https://doi.org/10.1016/B978-0-443-26629-4.00043-5}{https://doi.org/10.1016/B978-0-443-26629-4.00043-5}
-\item Wang, S., \me{Huang, J.}, \& Chang, H.-H. (2026). Computerized Adaptive Testing for STEM Learning. In \textit{Artificial Intelligence for STEM Education Research: Advanced Methods and Applications} (pp. 87--111). Cham: Springer Nature Switzerland.
+\item Zhang, Y.~X., \me{Huang, J.}, \& Chang, H.-H. (2025). Innovative Computerized Test Items. In \textit{Encyclopedia of Social Measurement}. Elsevier. \url{https://doi.org/10.1016/B978-0-443-26629-4.00043-5}
+\item Wang, S., \me{Huang, J.}, \& Chang, H.-H. (2026). Computerized Adaptive Testing for STEM Learning. In \textit{Artificial Intelligence for STEM Education Research: Advanced Methods and Applications} (pp. 87--111). Cham: Springer Nature Switzerland. \url{https://doi.org/10.1007/978-3-032-06565-0_5}
 \end{pubs}
 
-% ---- 7. Works in Progress ------------------------------------------------
-\section{Works in Progress}
-\begin{pubs}
-\item \me{Huang, J.}, \& Cheng, M.-M. A Two-Stage Framework Integrating Psychometric Modeling and Process Data for Interpretable DIF Detection.
-\end{pubs}
-
-% ---- 8. Conference Presentations -----------------------------------------
+% ---- 7. Conference Presentations -----------------------------------------
 \section{Conference Presentations}
 \begin{pubs}
 \item Wang, T., Yang, X.~D., \& \me{Huang, J.} (2026, April). A Mixture CDM for Mathematical Problem-Solving Strategies. \textit{Annual Meeting of the National Council on Measurement in Education (NCME)}, Los Angeles, CA, USA.
@@ -174,8 +169,6 @@ Test security, real-time item monitoring, item pool maintenance, computerized ad
   \item Performed psychometric analyses on operational datasets.
 \end{cvbullets}
 
-% ---- 10. Research Experience ---------------------------------------------
-\section{Research Experience}
 \entry{Research Assistant --- NSF Grant No.\ 2141847}{Dec. 2023 -- Present}{Purdue University}{West Lafayette, USA}
 \begin{cvbullets}
   \item Lead CD-CAT parameter estimation and item-selection optimization.
@@ -200,5 +193,11 @@ Test security, real-time item monitoring, item pool maintenance, computerized ad
 \begin{cvbullets}
   \item Analyzed and cleaned large-scale survey data; co-authored two journal papers.
 \end{cvbullets}
+
+% ---- Works in Progress (last) --------------------------------------------
+\section{Works in Progress}
+\begin{pubs}
+\item \me{Huang, J.}, \& Cheng, M.-M. A Two-Stage Framework Integrating Psychometric Modeling and Process Data for Interpretable DIF Detection.
+\end{pubs}
 
 \end{document}
