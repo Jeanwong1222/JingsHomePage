@@ -1,0 +1,7 @@
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+Jing_Huang_CV.pdf

@@ -1,0 +1,204 @@
+%=======================================================================
+%  Jing Huang — Curriculum Vitae
+%  Style modeled on a clean academic CV (small-caps ruled section heads,
+%  two-column entries, right-aligned dates), with a professional gold accent.
+%  Compile: pdflatex (run twice).  Auto-built in CI (see .github/workflows).
+%=======================================================================
+\documentclass[10.5pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.85in,top=0.7in,bottom=0.8in]{geometry}
+\usepackage{XCharter}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+% ---- Professional gold accent (replaces the reference's blue) -------------
+\definecolor{accent}{HTML}{B8860B}   % dark goldenrod — readable, warm
+\definecolor{textdark}{HTML}{1A1A1A}
+\definecolor{textgray}{HTML}{333333}
+
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={Jing Huang CV}}
+
+\setlength{\parindent}{0pt}
+\color{textgray}
+
+% ---- Section heading: bold small-caps accent + gold rule to the margin ----
+\renewcommand{\section}[1]{%
+  \needspace{3\baselineskip}\vspace{12pt}\par
+  {\large\bfseries\scshape\color{accent}#1}\hspace{6pt}%
+  {\color{accent}\leaders\hrule height 0.8pt\hfill\kern0pt}\par\vspace{6pt}}
+
+% ---- Entry helpers --------------------------------------------------------
+% Two-line entry: bold heading + right date; sub-line + right locale
+\newcommand{\entry}[4]{%
+  \needspace{2\baselineskip}%
+  {\color{textdark}\textbf{#1}}\hfill{#2}\par
+  {#3}\hfill{#4}\par\vspace{3pt}}
+
+% One-line dated row (heading left, date right) for honors/service
+\newcommand{\row}[2]{\needspace{1\baselineskip}#1\hfill#2\par\vspace{2pt}}
+
+% Tight bullet list
+\newlist{cvbullets}{itemize}{1}
+\setlist[cvbullets]{leftmargin=1.2em,itemsep=1pt,topsep=2pt,parsep=0pt,label=\textcolor{accent}{\small$\bullet$}}
+
+% Publications list (numbered, hanging)
+\newlist{pubs}{enumerate}{1}
+\setlist[pubs]{leftmargin=1.6em,itemsep=4pt,topsep=2pt,label=\arabic*.}
+
+\newcommand{\me}[1]{\textbf{#1}}   % bold my own name in citations
+
+%=======================================================================
+\begin{document}
+
+% ---- Header --------------------------------------------------------------
+\begin{minipage}[b]{0.62\textwidth}
+  {\Huge\scshape\bfseries\color{textdark}Jing Huang}\\[4pt]
+  {\color{textgray}Ph.D. Candidate, Educational Psychology \& Research Methodology}\\
+  {\color{textgray}Purdue University}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.36\textwidth}
+  \raggedleft\small
+  \faEnvelope[regular]~\href{mailto:huan1936@purdue.edu}{huan1936@purdue.edu}\\
+  \faPhone*~+1 765 694 9535\\
+  \faGlobe~\href{https://jinghuang.org}{jinghuang.org}\\
+  \faGraduationCap~\href{https://scholar.google.com/citations?user=KYPNfGYAAAAJ}{Google Scholar}\quad
+  \faGithub~\href{https://github.com/Jeanwong1222}{GitHub}\\
+  \faLinkedin~\href{https://www.linkedin.com/in/jing-huang-85645a292}{LinkedIn}\quad
+  \faOrcid~\href{https://orcid.org/0009-0007-9235-6950}{ORCID}
+\end{minipage}
+\vspace{4pt}
+
+% ---- 1. Education --------------------------------------------------------
+\section{Education}
+\entry{Purdue University}{Aug. 2023 -- Present}{Ph.D., Educational Psychology and Research Methodology (Advisor: Hua-Hua Chang)}{West Lafayette, USA}
+\entry{Purdue University}{Jan. 2026 -- Present}{M.S., Statistics (concurrent with the Ph.D.)}{West Lafayette, USA}
+\entry{East China Normal University}{Sep. 2020 -- Jun. 2023}{M.Ed., Educational Psychology}{Shanghai, China}
+\entry{East China Normal University}{Sep. 2016 -- Jun. 2020}{B.S., Statistics}{Shanghai, China}
+
+% ---- 2. Research Interests -----------------------------------------------
+\section{Research Interests}
+Test security, real-time item monitoring, item pool maintenance, computerized adaptive testing (CAT), large language models (LLMs), adaptive learning, and large-scale assessment.
+
+% ---- 3. Honors and Awards ------------------------------------------------
+\section{Honors and Awards}
+\row{ETS Harold Gulliksen Psychometric Research Fellowship}{Aug. 2026}
+\row{NCME Graduate Student Works-in-Progress eBoard Competition, Award Winner}{Apr. 2026}
+\row{Psychometric Society Vector Travel Award}{Jul. 2025}
+\row{Ross Fellowship, Purdue University}{Mar. 2023}
+\row{National Scholarship (12 of 6461), Ministry of Finance \& Ministry of Education, China}{Oct. 2022}
+\row{Excellent Graduate (101 of 6461), East China Normal University}{Oct. 2022}
+\row{Shu Qing Encouragement Scholarship (22 of 6461), East China Normal University}{Oct. 2021}
+\row{Third Prize, Contemporary Graduate Statistical Contest in Modeling (Team Leader)}{Dec. 2020}
+\row{Second Prize, COVID-19 Data Analysis Contest (Team Leader)}{Jul. 2020}
+\row{National Encouragement Scholarship (1 of 71), East China Normal University}{Dec. 2019}
+\row{Third Prize, Contemporary Undergraduate Statistical Contest in Modeling (Team Leader)}{Nov. 2019}
+\row{Shanghai Popular Science Education Innovation Award, Second Prize}{Nov. 2019}
+\row{Meritorious Winner, Interdisciplinary Contest in Modeling (ICM), COMAP}{Feb. 2019}
+\row{Third-Class Scholarship for Excellent Student, East China Normal University}{2017, 2019}
+
+% ---- 4. Professional Service ---------------------------------------------
+\section{Professional Service}
+{\color{textdark}\textbf{Conference Reviewer}}\par\vspace{2pt}
+\row{NCME AIME-Con --- Innovation Demonstration \& Paper/Poster Session Review Modules (7 proposals)}{2026}
+\vspace{4pt}
+{\color{textdark}\textbf{Journal Reviewer}}\par\vspace{2pt}
+\row{\textit{Psychometrika}}{2025, 2026}
+\row{\textit{Journal of Computerized Adaptive Testing}}{2025}
+
+% ---- 5. Publications -----------------------------------------------------
+\section{Publications}
+{\small\itshape $^{*}$ equal contribution.}\par\vspace{4pt}
+\begin{pubs}
+\item \me{Huang, J.}, \& Chang, H.-H. (2026). Real-Time Monitoring of Item Parameter Drift in CD-CAT via Adaptive CUSUM Charts. \textit{Psychometrika}, 1--61. \href{https://doi.org/10.1017/psy.2026.10140}{https://doi.org/10.1017/psy.2026.10140}
+\item Chang, H.-H., \me{Huang, J.}, Zhang, Y.~X., Wang, X.~Y., Le, V., Mehrabi, A., Salazar, A., Morphew, J.~W., Nissen, J.~M., \& Van Dusen, B. (major revision). How We Know What Students Know: Rethinking College STEM Assessments with CD-CATs. \textit{Psychometrika}.
+\item \me{Huang, J.}, \& Chang, H.-H. (major revision). A Cognitive Design System Approach to Enhancing Cognitive Alignment and Difficulty Control in Gen-AI Item Generation. \textit{Applied Measurement in Education}.
+\item \me{Huang, J.}, Zhang, J.~H., \& Chang, H.-H. (under review). A Dual-Dimensional LLM Framework for Automated Item Incidental Content Similarity Analysis in Large-Scale Assessments. \textit{Applied Measurement in Education}.
+\item Tao, Y.$^{*}$, \me{Huang, J.}$^{*}$, \& Yang, X.~D. (major revision). What Drives Students' Everyday Creativity? \textit{Thinking Skills and Creativity}.
+\item Zhang, J.~H., Liang, X.~Y., \& \me{Huang, J.} (major revision). A Multi-Agent Large Language Model Framework for Automated Q-Matrix Generation. \textit{Psychometrika}.
+\item \me{Huang, J.}, Zhang, Y.~X., Morphew, J.~W., Nissen, J.~M., Van Dusen, B., \& Chang, H.-H. (2025). Two-phase Content-balancing CD-CAT Online Item Calibration. \textit{Journal of Educational Measurement, 62}(4), 787--808.
+\item \me{Huang, J.}, Xin, Y.~P., \& Chang, H.-H. (2025). The Application of Machine Learning to Educational Process Data Analysis: A Systematic Review. \textit{Education Sciences, 15}(7), 888.
+\item Mo, F., \me{Huang, J.}, Yang, Y., \"{O}zen, Z., Maeda, Y., \& Olenchak, F.~R. (2025). Undergraduate Students' Learning Outcomes with ChatGPT: A Meta-Analytic Study. \textit{Computers and Education: Artificial Intelligence}, 100536.
+\item Zheng, C., Liu, J., Li, Y., Xu, P., Zhang, B., Wei, R., Liu, B., \& \me{Huang, J.} (2024). A 2PLM-RANK Multidimensional Forced-Choice Model and Its Fast Estimation Algorithm. \textit{Behavior Research Methods}, 1--26.
+\item Yang, X., \me{Huang, J.}, Chen, X., \& Su, X. (2022). A Conceptual Analysis of Conceptual Understanding. \textit{Exploring Education Development, 20}, 54--68. (in Chinese)
+\item Li, Q., \me{Huang, J.}, \& Xu, X. (2021). Relationship Between COVID-19 Infection Pneumonia and Traditional Chinese Medicinal Materials. \textit{Chinese Journal of Medical Library and Information Science, 30}(01), 17--24. (in Chinese)
+\item \me{Huang, J.}, \& Xu, X. (2020). Research on the Influential Factors of Public Perception and Attitudes to COVID-19: Based on the Citizen Survey of Shanghai. \textit{Library Journal, 39}(12), 98--106. (in Chinese)
+\item Xu, X., \& \me{Huang, J.} (2020). Research on Executives' Risk Perception and Behavior Choice to COVID-19. \textit{Library Journal, 39}(12), 117--127. (in Chinese)
+\end{pubs}
+
+% ---- 6. Book Chapters ----------------------------------------------------
+\section{Book Chapters}
+\begin{pubs}
+\item Zhang, Y.~X., \me{Huang, J.}, \& Chang, H.-H. (2025). Innovative Computerized Test Items. In \textit{Encyclopedia of Social Measurement}. Elsevier. \href{https://doi.org/10.1016/B978-0-443-26629-4.00043-5}{https://doi.org/10.1016/B978-0-443-26629-4.00043-5}
+\item Wang, S., \me{Huang, J.}, \& Chang, H.-H. (2026). Computerized Adaptive Testing for STEM Learning. In \textit{Artificial Intelligence for STEM Education Research: Advanced Methods and Applications} (pp. 87--111). Cham: Springer Nature Switzerland.
+\end{pubs}
+
+% ---- 7. Works in Progress ------------------------------------------------
+\section{Works in Progress}
+\begin{pubs}
+\item \me{Huang, J.}, \& Cheng, M.-M. A Two-Stage Framework Integrating Psychometric Modeling and Process Data for Interpretable DIF Detection.
+\end{pubs}
+
+% ---- 8. Conference Presentations -----------------------------------------
+\section{Conference Presentations}
+\begin{pubs}
+\item Wang, T., Yang, X.~D., \& \me{Huang, J.} (2026, April). A Mixture CDM for Mathematical Problem-Solving Strategies. \textit{Annual Meeting of the National Council on Measurement in Education (NCME)}, Los Angeles, CA, USA.
+\item \me{Huang, J.}, Zhang, Y.~X., Wang, X.~Y., \& Chang, H.-H. (2026, April). Optimizing Cognitive Diagnosis CAT: Addressing Practical Challenges through Psychometric Innovation. \textit{Annual Meeting of the American Educational Research Association (AERA)}, Los Angeles, CA, USA.
+\item \me{Huang, J.}, Zhang, J.~H., \& Chang, H.-H. (2026, April). LLM-Enhanced Automated Item Content Analysis Supporting CAT Applications. \textit{Annual Meeting of the American Educational Research Association (AERA)}, Los Angeles, CA, USA.
+\item \me{Huang, J.}, \& Chang, H.-H. (2025, November). Generative AI-Enhanced Cognitive Design System Approach to Automatic Item Generation. \textit{Purdue AI in P-12 Education Conference}, West Lafayette, IN, USA.
+\item \me{Huang, J.}, \& Chang, H.-H. (2025, July). Bridging Psychometrics and Generative AI: Automatic Item Generation for Verbal Analogical Reasoning. \textit{International Meeting of the Psychometric Society (90th Annual Meeting)}, Minneapolis, MN, USA.
+\item \me{Huang, J.}, Zhang, Y.~X., Morphew, J.~W., Nissen, J.~M., Van Dusen, B., \& Chang, H.-H. (2025, April). CD-CAT Online Item Calibration with Practical Constraints. \textit{Annual Meeting of the National Council on Measurement in Education (NCME)}, Denver, CO, USA.
+\item \me{Huang, J.}, Zhang, Y.~X., \& Chang, H.-H. (2024, November). Two-phase Content-balancing CD-CAT Online Item Calibration. \textit{Ideas in Testing Research}, Chicago, IL, USA.
+\item \me{Huang, J.}, Xin, Y.~P., \& Chang, H.-H. (2024, November). Machine Learning to Educational Process Data Analysis: A Systematic Review. \textit{Purdue AI in P-12 Education Conference}, West Lafayette, IN, USA.
+\item \me{Huang, J.}, Yang, T., \& Yang, X. (2024, April). Taking a ``Whole'' Perspective: Exploring the Influence of Individual and Environmental Factors on Creative Performance. Roundtable, \textit{Annual Meeting of the American Educational Research Association (AERA)}, Philadelphia, PA, USA.
+\item \me{Huang, J.}, \& Yang, X. (2022, April). Model-based Approaches to Classifying Students into Competence-based Proficiency Levels. Poster, \textit{Annual Meeting of the American Educational Research Association (AERA)}, San Diego, CA, USA.
+\end{pubs}
+
+% ---- 9. Experience -------------------------------------------------------
+\section{Experience}
+\entry{Psychometric Research Intern --- NCCPA}{Jun. 2026 -- Present}{National Commission on Certification of Physician Assistants}{}
+\begin{cvbullets}
+  \item Support psychometric research on assessment quality, test security, and data-driven monitoring for certification examinations.
+\end{cvbullets}
+\entry{Graduate Teaching Assistant --- Purdue University}{Aug. 2025 -- Present}{College of Education}{West Lafayette, USA}
+\begin{cvbullets}
+  \item EDPS 32700 Classroom Assessment (Dr.\ Anne Traynor).
+\end{cvbullets}
+\entry{Graduate Research Assistant --- Purdue University}{Aug. 2024 -- Jul. 2025}{School of Engineering Education}{West Lafayette, USA}
+\begin{cvbullets}
+  \item Developed, maintained, and refined CD-CAT algorithms; conducted simulation studies.
+  \item Performed psychometric analyses on operational datasets.
+\end{cvbullets}
+
+% ---- 10. Research Experience ---------------------------------------------
+\section{Research Experience}
+\entry{Research Assistant --- NSF Grant No.\ 2141847}{Dec. 2023 -- Present}{Purdue University}{West Lafayette, USA}
+\begin{cvbullets}
+  \item Lead CD-CAT parameter estimation and item-selection optimization.
+  \item Lead online calibration and CAT tuning procedures.
+  \item Support mathematics cognitive-diagnosis development and psychometric refinement, and \href{https://lassoeducation.org}{LASSO}-platform data analysis.
+\end{cvbullets}
+\entry{Volunteer Consultant --- Psychometric Investigation Laboratory}{Dec. 2023 -- Present}{Purdue University}{West Lafayette, USA}
+\begin{cvbullets}
+  \item Advise on statistical methods, research design, and data management.
+  \item Deliver the \textit{Using Machine Learning to Analyze Educational Data} workshop series.
+\end{cvbullets}
+\entry{Research Assistant --- East China Normal University}{Apr. 2021 -- Jun. 2023}{Suzhou Micro-Monitoring Project; ``13th Five-Year Plan'' Project}{Shanghai, China}
+\begin{cvbullets}
+  \item Modeled creativity data from 4,833 students across 48 schools using Rasch analysis and multilevel models.
+  \item Analyzed teacher--student interactions from classroom video data.
+\end{cvbullets}
+\entry{Research Assistant --- Chinese Hospital Association \& ECNU}{Jul. 2021 -- Sep. 2021}{Clinical Pharmacist Training Evaluation}{Shanghai, China}
+\begin{cvbullets}
+  \item Analyzed student-satisfaction factors using ordinal logistic regression.
+\end{cvbullets}
+\entry{Research Assistant --- Surveys and Data Center, ECNU}{Sep. 2019 -- Jun. 2020}{Quality-of-Life Survey Studies}{Shanghai, China}
+\begin{cvbullets}
+  \item Analyzed and cleaned large-scale survey data; co-authored two journal papers.
+\end{cvbullets}
+
+\end{document}
