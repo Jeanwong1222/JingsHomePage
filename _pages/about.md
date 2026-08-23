@@ -5,7 +5,7 @@ permalink: /
 subtitle: Educational Psychology & Research Methodology
 profile:
   align: right
-  image: jinghuang.png
+  image: jinghuang.jpg
   image_circular: true # crops the image to make it circular
   address:
     # <p>305 N. University St.</p>
