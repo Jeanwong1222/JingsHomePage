@@ -38,7 +38,7 @@ a:focus {
 
 /* ---- Overall column width; centered in the viewport (not left-aligned) ---- */
 body .container {
-  max-width: 940px;
+  max-width: 840px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -203,7 +203,7 @@ ul.news-list .news-date {
 /* ---- Homepage research pillars: 3 clickable boxes linking to /publications/ ---- */
 .research-pillars {
   display: flex;
-  gap: 0.8rem;
+  gap: 0.6rem;
   margin: 1.2rem 0;
   align-items: stretch;
 }
@@ -213,7 +213,7 @@ ul.news-list .news-date {
   display: block;
   border-left: 4px solid var(--pillar-color);
   background: var(--pillar-bg);
-  padding: 0.7rem 0.9rem;
+  padding: 0.6rem 0.7rem;
   border-radius: 6px;
   color: inherit;
   text-decoration: none;
@@ -225,7 +225,7 @@ ul.news-list .news-date {
 }
 .research-pillars .pillar-title {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.3;
   color: var(--pillar-color);
   margin-bottom: 0;
