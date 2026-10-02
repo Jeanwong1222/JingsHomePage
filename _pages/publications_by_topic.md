@@ -10,13 +10,13 @@ nav: false
 
 <div class="publications">
 
-  <h2 id="examinee" class="research-line line--examinee">🚨 Real-Time Examinee Monitoring</h2>
+  <h2 id="examinee" class="research-line line--examinee">🚨 Examinee Monitoring</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=examinee] %}
 
-  <h2 id="item" class="research-line line--item">🔍 Real-Time Item Supervision</h2>
+  <h2 id="item" class="research-line line--item">🔍 Item Monitoring</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=item] %}
 
-  <h2 id="pool" class="research-line line--pool">♻️ Real-Time Pool Replenishment</h2>
+  <h2 id="pool" class="research-line line--pool">♻️ Pool Replenishment</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=pool] %}
 
   <h2 id="other" class="research-line line--other">Other Research</h2>
