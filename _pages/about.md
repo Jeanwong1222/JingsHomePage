@@ -30,24 +30,22 @@ services: true
 
 I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at Purdue University, working under the guidance of Professor [Hua-Hua Chang](https://education.purdue.edu/about/directory/hua-hua-chang/).
 
-My research develops methods for **real-time integrity monitoring of adaptive and large-scale assessments in the AI era**. Live testing produces a continuous stream of responses and response times. I use this stream to detect threats as they emerge, at both the examinee and the item level, and to replenish the item pool so that measurement remains valid. The three directions below form one closed loop (click each to see the related publications):
+My research focuses on the **continuous, dynamic monitoring of live test administration**. As responses arrive, I monitor both examinees and items; once an alarm is raised, I respond in real time, either by intervening with the examinee or by replacing the item, so that measurement remains valid and secure. My work follows three lines (click each to see the related publications):
 
 <div class="research-pillars">
   <a class="pillar pillar--examinee" href="{{ '/publications-by-topic/' | relative_url }}#examinee">
-    <div class="pillar-title">🚨 Examinee Monitoring</div>
+    <div class="pillar-title">🚨 Real-Time Examinee Monitoring</div>
     <div class="pillar-detail">Developing sequential methods that detect item preknowledge, low effort, and unauthorized AI assistance from joint response and response-time data.</div>
   </a>
-  <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
-    <div class="pillar-title">🔍 Item Monitoring</div>
-    <div class="pillar-detail">Detecting item parameter drift and item compromise during live administration, using adaptive CUSUM charts and Bayesian change-point models informed by LLM-based content-risk priors.</div>
+  <a class="pillar pillar--intervention" href="{{ '/publications-by-topic/' | relative_url }}#intervention">
+    <div class="pillar-title">🛡️ Real-Time Intervention</div>
+    <div class="pillar-detail">Responding to examinee-level alarms within the session, such as forensic item clones that verify suspected external AI assistance and recover ability estimates.</div>
   </a>
-  <a class="pillar pillar--pool" href="{{ '/publications-by-topic/' | relative_url }}#pool">
-    <div class="pillar-title">♻️ Pool Replenishment</div>
-    <div class="pillar-detail">Replacing flagged items with construct-equivalent AI-generated items that are screened for content similarity and calibrated online, so that the item bank recovers without interrupting testing.</div>
+  <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
+    <div class="pillar-title">♻️ Real-Time Item Supervision &amp; Pool Replacement</div>
+    <div class="pillar-detail">Tracking item parameter drift and item compromise during live administration, and replacing flagged items with construct-equivalent AI-generated items that are screened for content similarity and calibrated online.</div>
   </a>
 </div>
-
-The directions are linked by design: examinee and item monitoring read the same response data from two sides with the same sequential-detection logic, and each alarm triggers replenishment, whose new items then re-enter monitoring. Generated items can also serve as forensic probes that verify suspected AI assistance.
 
 My research has been recognized and supported by the [Ross Fellowship](https://www.purdue.edu/gradschool/fellowship/funding-resources-for-students/fellowships/managed-fellowships/recruitment-fellowships.html) (2023–2026, 2027–2028) and the **[ETS Harold Gulliksen Psychometric Research Fellowship](https://www-stg.eu.ets.org/research/internship-fellowship/about/harold-gulliksen.html)** (2026–2027).
 
