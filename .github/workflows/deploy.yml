@@ -10,12 +10,19 @@ on:
       - master
       - main
   workflow_dispatch:
+  # The CV PDF is rebuilt by build-cv.yml, whose bot commit cannot trigger
+  # this workflow on its own; redeploy once it finishes so the new PDF goes live.
+  workflow_run:
+    workflows: [build-cv]
+    types: [completed]
+    branches: [main, master]
 
 permissions:
   contents: write
 
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 🛎️
