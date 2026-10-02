@@ -30,20 +30,20 @@ services: true
 
 I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at Purdue University, working under the guidance of Professor [Hua-Hua Chang](https://education.purdue.edu/about/directory/hua-hua-chang/).
 
-My research focuses on the **continuous, dynamic monitoring of live test administration, closing the loop between test security and psychometric maintenance**. My work spans three directions (click each to see the related publications):
+My research focuses on the **continuous, dynamic monitoring of live test administration**. As responses arrive, I monitor both examinees and items; once an alarm is raised, I respond in real time, either by intervening with the examinee or by replacing the item, so that measurement remains valid and secure. My work follows three lines (click each to see the related publications):
 
 <div class="research-pillars">
   <a class="pillar pillar--examinee" href="{{ '/publications-by-topic/' | relative_url }}#examinee">
     <div class="pillar-title">🚨 Real-Time Examinee Monitoring</div>
-    <div class="pillar-detail">Securing test integrity by using process data to detect aberrant testing patterns and unauthorized AI assistance as they happen.</div>
+    <div class="pillar-detail">Developing sequential methods that detect item preknowledge, low effort, and unauthorized AI assistance from joint response and response-time data.</div>
+  </a>
+  <a class="pillar pillar--intervention" href="{{ '/publications-by-topic/' | relative_url }}#intervention">
+    <div class="pillar-title">🛡️ Real-Time Intervention</div>
+    <div class="pillar-detail">Responding to examinee-level alarms within the session, such as forensic item clones that verify suspected external AI assistance and recover ability estimates.</div>
   </a>
   <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
-    <div class="pillar-title">🔍 Real-Time Item Supervision</div>
-    <div class="pillar-detail">Ensuring continuous measurement precision by actively tracking item parameter drift and detecting compromised test content in live testing environments.</div>
-  </a>
-  <a class="pillar pillar--pool" href="{{ '/publications-by-topic/' | relative_url }}#pool">
-    <div class="pillar-title">♻️ Real-Time Pool Replenishment</div>
-    <div class="pillar-detail">Building "self-healing" item banks through online calibration, Automatic Item Generation (AIG), and LLM-driven similarity analysis to instantly replace exposed items.</div>
+    <div class="pillar-title">♻️ Real-Time Item Supervision &amp; Pool Replacement</div>
+    <div class="pillar-detail">Tracking item parameter drift and item compromise during live administration, and replacing flagged items with construct-equivalent AI-generated items that are screened for content similarity and calibrated online.</div>
   </a>
 </div>
 

@@ -249,7 +249,7 @@ ul.news-list .news-date {
 }
 .pillar--examinee { --pillar-color: #e74c3c; --pillar-bg: rgba(231, 76, 60, 0.08); }
 .pillar--item     { --pillar-color: #16a085; --pillar-bg: rgba(22, 160, 133, 0.08); }
-.pillar--pool     { --pillar-color: #2e86de; --pillar-bg: rgba(46, 134, 222, 0.08); }
+.pillar--intervention { --pillar-color: #8e44ad; --pillar-bg: rgba(142, 68, 173, 0.08); }
 
 /* Below ~900px the three no-wrap labels can't share a row, so stack them */
 @media (max-width: 900px) {
@@ -273,7 +273,7 @@ ul.news-list .news-date {
 }
 .line--examinee { --line-color: #e74c3c; --line-bg: rgba(231, 76, 60, 0.08); }
 .line--item     { --line-color: #16a085; --line-bg: rgba(22, 160, 133, 0.08); }
-.line--pool     { --line-color: #2e86de; --line-bg: rgba(46, 134, 222, 0.08); }
+.line--intervention { --line-color: #8e44ad; --line-bg: rgba(142, 68, 173, 0.08); }
 .line--other    { --line-color: #6b7280; --line-bg: rgba(107, 114, 128, 0.08); }
 .line--chapter  { --line-color: #8e44ad; --line-bg: rgba(142, 68, 173, 0.08); }
 .line--wip      { --line-color: #b8860b; --line-bg: rgba(184, 134, 11, 0.08); }
