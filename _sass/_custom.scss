@@ -292,7 +292,7 @@ ul.news-list .news-date {
   letter-spacing: 0;
   border: 0;
   padding: 0;
-  margin: 30px 0 15px;
+  margin: 24px 0 8px;
 }
 /* Entry list: disc bullets, like the reference */
 .pub-byyear ol.bibliography {
@@ -301,8 +301,8 @@ ul.news-list .news-date {
   margin: 0;
 }
 .pub-byyear ol.bibliography li {
-  margin: 16px 0;
-  line-height: 1.7;
+  margin: 8px 0;
+  line-height: 1.5;
   font-size: 15px;
   color: #000;
 }
@@ -315,15 +315,18 @@ ul.news-list .news-date {
 .pub-byyear .periodical { font-size: 15px; color: #333; }
 /* The status line ("Under review" / "Major revision"): smaller, muted */
 .pub-byyear .periodical + .periodical { font-size: 13px; color: #777; }
-/* Render the link "buttons" as plain inline links (reference has no button chrome) */
-.pub-byyear .links a.btn {
-  border: 0;
-  padding: 0;
-  margin-right: 0.7rem;
-  font-size: 14px;
+/* Compact list: the [HTML] link sits inline after "journal, year" (small),
+   so the separate link-button row is dropped on this page only */
+.periodical-html { display: none; }
+.pub-byyear .periodical-html {
+  display: inline;
+  margin-left: 4px;
+  font-size: 12px;
   color: #1772d0;
 }
-.pub-byyear .links a.btn:hover { color: #f09228; }
+.pub-byyear .periodical-html:hover { color: #f09228; }
+.pub-byyear .links { display: none; }
+.pub-byyear .badges { padding-bottom: 0; }   /* empty badge row otherwise adds a gap */
 
 /* ---- Presentations page: numbered list, flush-left (no empty image column) ---- */
 .presentations-list ol.bibliography {
