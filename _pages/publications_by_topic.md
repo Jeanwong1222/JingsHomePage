@@ -16,7 +16,7 @@ nav: false
   <h2 id="intervention" class="research-line line--intervention">🛡️ Real-Time Intervention</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @unpublished[line=intervention] %}
 
-  <h2 id="item" class="research-line line--item">♻️ Real-Time Item Supervision &amp; Pool Replacement</h2>
+  <h2 id="item" class="research-line line--item">♻️ Real-Time Pool Maintenance</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=item] %}
 
   <h2 id="other" class="research-line line--other">Other Research</h2>
