@@ -42,7 +42,7 @@ My research focuses on the **continuous, dynamic monitoring of live test adminis
     <div class="pillar-detail">Responding to examinee-level alarms within the session, such as forensic item clones that verify suspected external AI assistance and recover ability estimates.</div>
   </a>
   <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
-    <div class="pillar-title">♻️ Real-Time Item Supervision &amp; Pool Replacement</div>
+    <div class="pillar-title">♻️ Real-Time Pool Maintenance</div>
     <div class="pillar-detail">Tracking item parameter drift and item compromise during live administration, and replacing flagged items with construct-equivalent AI-generated items that are screened for content similarity and calibrated online.</div>
   </a>
 </div>
