@@ -30,9 +30,7 @@ services: true
 
 I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at Purdue University, working under the guidance of Professor [Hua-Hua Chang](https://education.purdue.edu/about/directory/hua-hua-chang/).
 
-Digital assessments do not remain static. As testing unfolds, examinee behavior and item performance can change in ways that threaten the interpretation of scores. I develop **real-time monitoring, in-session intervention, and continuous item-pool maintenance** methods for adaptive, trustworthy, and effective live assessment.
-
-My research monitors examinee behavior and item performance throughout live administration. When monitoring evidence raises concern about an examinee's ability estimate, I develop and evaluate in-session interventions that support more accurate and fair measurement. When evidence accumulates around item or item-pool quality, I develop methods for calibration, review, replenishment, and continuous improvement across future administrations. I draw on cognitive diagnosis, computerized adaptive testing, process data, sequential psychometric methods, and theory-guided AI to advance this research program.
+As testing unfolds, examinee behavior and item performance can change in ways that threaten the interpretation of scores. I develop **real-time monitoring, in-session intervention, and continuous item-pool maintenance** methods for adaptive, trustworthy, and effective live assessment. My research monitors examinee behavior and item performance throughout live administration.
 
 <div class="research-pillars">
   <a class="pillar pillar--monitoring" href="{{ '/publications-by-topic/' | relative_url }}#monitoring">
@@ -46,17 +44,6 @@ My research monitors examinee behavior and item performance throughout live admi
   <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
     <div class="pillar-title">♻️ Continuous Item-Pool Maintenance</div>
     <div class="pillar-detail">Use accumulated evidence to calibrate, review, replenish, and improve item pools across administrations.</div>
-  </a>
-</div>
-    <div class="pillar-detail">Developing sequential methods that detect item preknowledge, low effort, and unauthorized AI assistance from joint response and response-time data.</div>
-  </a>
-  <a class="pillar pillar--intervention" href="{{ '/publications-by-topic/' | relative_url }}#intervention">
-    <div class="pillar-title">🛡️ Real-Time Intervention</div>
-    <div class="pillar-detail">Responding to examinee-level alarms within the session, such as forensic item clones that verify suspected external AI assistance and recover ability estimates.</div>
-  </a>
-  <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
-    <div class="pillar-title">♻️ Real-Time Pool Maintenance</div>
-    <div class="pillar-detail">Tracking item parameter drift and item compromise during live administration, and replacing flagged items with construct-equivalent AI-generated items that are screened for content similarity and calibrated online.</div>
   </a>
 </div>
 
