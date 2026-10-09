@@ -1,41 +1,32 @@
 # Experiences page data (rendered by _pages/experiences.md via _includes/cv/time_table.html)
 
-- title: Professional Experience
-  type: time_table
-  contents:
-    - title: Psychometric Research Intern
-      institution: National Commission on Certification of Physician Assistants (NCCPA)
-      year: Jun. 2026 – Present
-      description:
-        - Support psychometric research on assessment quality, test security, and data-driven monitoring for certification examinations.
-        - Collaborate with researchers to examine methodological approaches that strengthen the validity, fairness, and security of high-stakes assessments.
-    - title: Graduate Teaching Assistant
-      institution: Department of Educational Studies, Purdue University
-      year: Aug. 2025 – May 2026
-      description:
-        - Support EDPS 32700 (Classroom Assessment), assisting with instruction and course activities under Dr. Anne Traynor.
-    - title: Graduate Research Assistant
-      institution: School of Engineering Education, Purdue University
-      year: Aug. 2024 – Jul. 2025
-      description:
-        - Developed and refined CD-CAT algorithms and conducted simulation studies.
-        - Performed psychometric analyses on operational datasets to support ongoing research.
-
 - title: Research Experience
   type: time_table
   contents:
-    - title: Research Assistant
-      institution: Purdue University (NSF Grant No. 2141847)
-      year: Dec. 2023 – Present
+    - title: Harold Gulliksen Psychometric Research Fellow
+      institution: "ETS (Mentors: Sandip Sinharay and Michael Fauss)"
+      year: Aug. 2026 – Present
       description:
-        - Lead CD-CAT parameter estimation and item-selection optimization.
-        - Lead online calibration and CAT tuning procedures, and support LASSO-platform data analysis and mathematics cognitive-diagnosis development.
+        - Develop sequential methods for real-time detection of aberrant examinee behavior using joint response and response-time data (dissertation research).
+        - Completed a manuscript on forensic item clones for verifying external AI assistance and recovering ability estimates.
+    - title: Psychometric Research Intern
+      institution: National Commission on Certification of Physician Assistants (NCCPA)
+      year: Jun. 2026 – Aug. 2026
+      description:
+        - Developed an LLM-based content-risk scoring rubric for certification items, rated by multiple large language models and evaluated with a generalizability study.
+        - Built a Bayesian change-point model that uses content-risk scores as prior information to detect compromised items in a longitudinal assessment program.
+        - First-authored manuscript under review at <em>Educational and Psychological Measurement</em>.
+    - title: Graduate Research Assistant
+      institution: School of Engineering Education, Purdue University (NSF Grant No. 2141847)
+      year: Aug. 2024 – Jul. 2025
+      description:
+        - Developed, maintained, and refined CD-CAT algorithms; led parameter estimation, item-selection optimization, online calibration, and CAT tuning procedures; conducted simulation studies.
+        - Supported mathematics cognitive-diagnosis development and psychometric refinement; performed psychometric analyses of operational <a href="https://lassoeducation.org">LASSO</a>-platform data.
     - title: Volunteer Statistical Consultant
       institution: Psychometric Investigation Laboratory, Purdue University
       year: Dec. 2023 – Present
       description:
         - Advise researchers on statistical methods, research design, and data management.
-        - Deliver workshops on applying machine learning to educational data.
     - title: Research Assistant, Classroom Interaction Analysis
       institution: East China Normal University
       year: Apr. 2022 – Jun. 2023
@@ -66,3 +57,17 @@
       year: Sept. 2016 – Sept. 2017
       description:
         - Interviewed 17 international students on their perceptions of Shanghai.
+
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Graduate Teaching Assistant
+      institution: Department of Educational Studies, Purdue University
+      year: Aug. 2025 – May 2026
+      description:
+        - EDPS 32700 Classroom Assessment (Dr. Anne Traynor).
+    - title: Workshop Instructor
+      institution: Psychometric Investigation Laboratory, Purdue University
+      year: Dec. 2023 – Present
+      description:
+        - <em>Using Machine Learning to Analyze Educational Data</em> workshop series.
