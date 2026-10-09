@@ -30,7 +30,7 @@ services: true
 
 I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at Purdue University, working under the guidance of Professor [Hua-Hua Chang](https://education.purdue.edu/about/directory/hua-hua-chang/).
 
-As testing unfolds, examinee behavior and item performance can change in ways that threaten the interpretation of scores. I develop **real-time monitoring, in-session intervention, and continuous item-pool maintenance** methods for adaptive, trustworthy, and effective live assessment. My research monitors examinee behavior and item performance throughout live administration.
+As testing unfolds, examinee behavior and item performance can change in ways that threaten the interpretation of scores. I develop **real-time monitoring, in-session intervention, and continuous item-pool maintenance** methods for **adaptive, trustworthy, and effective live assessment**.
 
 <div class="research-pillars">
   <a class="pillar pillar--monitoring" href="{{ '/publications-by-topic/' | relative_url }}#monitoring">
