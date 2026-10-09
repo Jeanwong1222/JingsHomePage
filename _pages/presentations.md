@@ -11,16 +11,16 @@ nav_order: 2
 
 <div class="publications presentations-list">
 
-  <h2 id="examinee" class="research-line line--examinee">🚨 Real-Time Examinee Monitoring</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @inproceedings[line=examinee] %}
+  <h2 id="monitoring" class="research-line line--monitoring">🚨 Real-Time Assessment Monitoring</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @inproceedings[line=monitoring] %}
 
-  <h2 id="intervention" class="research-line line--intervention">🛡️ Real-Time Intervention</h2>
+  <h2 id="intervention" class="research-line line--intervention">🛡️ In-Session Intervention</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @inproceedings[line=intervention] %}
 
-  <h2 id="item" class="research-line line--item">♻️ Real-Time Pool Maintenance</h2>
+  <h2 id="item" class="research-line line--item">♻️ Continuous Item-Pool Maintenance</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @inproceedings[line=item] %}
 
-  <h2 id="other" class="research-line line--other">Other Research</h2>
+  <h2 id="other" class="research-line line--other">Related Research in Educational Measurement and Learning</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @inproceedings[line=other] %}
 
 </div>

@@ -30,11 +30,24 @@ services: true
 
 I am a Ph.D. candidate in **Educational Psychology and Research Methodology** at Purdue University, working under the guidance of Professor [Hua-Hua Chang](https://education.purdue.edu/about/directory/hua-hua-chang/).
 
-My research focuses on the **continuous, dynamic monitoring of live test administration**. As responses arrive, I monitor both examinees and items; once an alarm is raised, I respond in real time, either by intervening with the examinee or by replacing the item, so that measurement remains valid and secure. My work follows three lines (click each to see the related publications):
+Digital assessments do not remain static. As testing unfolds, examinee behavior and item performance can change in ways that threaten the interpretation of scores. I develop **real-time monitoring, in-session intervention, and continuous item-pool maintenance** methods for adaptive, trustworthy, and effective live assessment.
+
+My research monitors examinee behavior and item performance throughout live administration. When monitoring evidence raises concern about an examinee's ability estimate, I develop and evaluate in-session interventions that support more accurate and fair measurement. When evidence accumulates around item or item-pool quality, I develop methods for calibration, review, replenishment, and continuous improvement across future administrations. I draw on cognitive diagnosis, computerized adaptive testing, process data, sequential psychometric methods, and theory-guided AI to advance this research program.
 
 <div class="research-pillars">
-  <a class="pillar pillar--examinee" href="{{ '/publications-by-topic/' | relative_url }}#examinee">
-    <div class="pillar-title">🚨 Real-Time Examinee Monitoring</div>
+  <a class="pillar pillar--monitoring" href="{{ '/publications-by-topic/' | relative_url }}#monitoring">
+    <div class="pillar-title">🚨 Real-Time Assessment Monitoring</div>
+    <div class="pillar-detail">Develop methods to monitor examinee behavior and item performance as live assessment unfolds.</div>
+  </a>
+  <a class="pillar pillar--intervention" href="{{ '/publications-by-topic/' | relative_url }}#intervention">
+    <div class="pillar-title">🛡️ In-Session Intervention</div>
+    <div class="pillar-detail">Develop and evaluate interventions informed by monitoring evidence to improve the accuracy and fairness of ability estimation.</div>
+  </a>
+  <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
+    <div class="pillar-title">♻️ Continuous Item-Pool Maintenance</div>
+    <div class="pillar-detail">Use accumulated evidence to calibrate, review, replenish, and improve item pools across administrations.</div>
+  </a>
+</div>
     <div class="pillar-detail">Developing sequential methods that detect item preknowledge, low effort, and unauthorized AI assistance from joint response and response-time data.</div>
   </a>
   <a class="pillar pillar--intervention" href="{{ '/publications-by-topic/' | relative_url }}#intervention">
