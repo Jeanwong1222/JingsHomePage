@@ -43,7 +43,7 @@ As testing unfolds, examinee behavior and item performance can change in ways th
   </a>
   <a class="pillar pillar--item" href="{{ '/publications-by-topic/' | relative_url }}#item">
     <div class="pillar-title">♻️ Continuous Item-Pool Maintenance</div>
-    <div class="pillar-detail">Use accumulated evidence to calibrate, review, replenish, and improve item pools across administrations.</div>
+    <div class="pillar-detail">Maintain item pools across administrations through online calibration, content screening, and replenishment with AI-assisted item generation.</div>
   </a>
 </div>
 
