@@ -14,7 +14,7 @@ nav: false
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=monitoring] %}
 
   <h2 id="intervention" class="research-line line--intervention">🛡️ In-Session Intervention</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @unpublished[line=intervention] %}
+  {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=intervention] %}
 
   <h2 id="item" class="research-line line--item">♻️ Continuous Item-Pool Maintenance</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @article[line=item] %}
@@ -26,6 +26,6 @@ nav: false
   {% bibliography -f {{ site.scholar.bibliography }} -q @incollection %}
 
   <h2 id="wip" class="research-line line--wip">Works in Progress</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @unpublished[line!=intervention] %}
+  {% bibliography -f {{ site.scholar.bibliography }} -q @unpublished %}
 
 </div>
