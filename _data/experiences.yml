@@ -15,15 +15,15 @@
       description:
         - Developed an LLM-based content-risk scoring rubric for certification items, rated by multiple large language models and evaluated with a generalizability study.
         - Built a Bayesian change-point model that uses content-risk scores as prior information to detect compromised items in a longitudinal assessment program.
-        - First-authored manuscript under review at <em>Educational and Psychological Measurement</em>.
+        - First-authored manuscript under review at <em>Applied Psychological Measurement</em>.
     - title: Graduate Research Assistant
       institution: School of Engineering Education, Purdue University (NSF Grant No. 2141847)
       year: Aug. 2024 – Jul. 2025
       description:
         - Developed, maintained, and refined CD-CAT algorithms; led parameter estimation, item-selection optimization, online calibration, and CAT tuning procedures; conducted simulation studies.
         - Supported mathematics cognitive-diagnosis development and psychometric refinement; performed psychometric analyses of operational <a href="https://lassoeducation.org">LASSO</a>-platform data.
-    - title: Volunteer Statistical Consultant
-      institution: Psychometric Investigation Laboratory, Purdue University
+    - title: Statistical Consultant
+      institution: '<a href="https://education.purdue.edu/research/centers-and-institutes/psychometric-investigation-lab/">Psychometric Investigation Laboratory</a>, Purdue University'
       year: Dec. 2023 – Present
       description:
         - Advise researchers on statistical methods, research design, and data management.
@@ -67,7 +67,7 @@
       description:
         - EDPS 32700 Classroom Assessment (Dr. Anne Traynor).
     - title: Workshop Instructor
-      institution: Psychometric Investigation Laboratory, Purdue University
+      institution: '<a href="https://education.purdue.edu/research/centers-and-institutes/psychometric-investigation-lab/">Psychometric Investigation Laboratory</a>, Purdue University'
       year: Dec. 2023 – Present
       description:
         - <em>Using Machine Learning to Analyze Educational Data</em> workshop series.
