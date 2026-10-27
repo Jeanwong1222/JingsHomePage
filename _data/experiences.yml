@@ -66,6 +66,11 @@
       year: Aug. 2025 – May 2026
       description:
         - EDPS 32700 Classroom Assessment (Dr. Anne Traynor).
+    - title: Invited Guest Lecturer
+      institution: Department of Educational Studies, Purdue University
+      year: Apr. 2026
+      description:
+        - 'EDPS 63600 Item Response Theory: led an R tutorial on IRT parameter estimation with the <code>mirt</code> package and an anchor-test linking exercise.'
     - title: Workshop Instructor
       institution: '<a href="https://education.purdue.edu/research/centers-and-institutes/psychometric-investigation-lab/">Psychometric Investigation Laboratory</a>, Purdue University'
       year: Dec. 2023 – Present
