@@ -211,6 +211,13 @@ ul.news-list .news-date {
 /* Homepage lists (News, Honors, Services): Google-blue dots at full disc size */
 ul.news-list li::marker,
 ul.honors-list li::marker { color: var(--link); }
+/* Services: third-level lines (– sub-items) smaller, lighter and tighter than the • items above */
+.service-sub {
+  margin: 0 0 0.1em 2.85em;   /* 2.85em at 14px = the old 40px indent */
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
 .list-dot {
   color: var(--link);
   font-size: 1.3em;
