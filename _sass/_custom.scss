@@ -5,6 +5,8 @@
    Imported last in main.scss so these rules override the al-folio defaults.
    ========================================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..700&display=swap');
+/* Brush Kaishu (楷书) face for the Chinese name only; text= subsets the download to these two glyphs */
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E9%BB%84%E5%A9%A7&display=swap');
 
 :root {
   --font-ui: 'Google Sans Flex', Roboto, Arial, Helvetica, sans-serif;
@@ -119,6 +121,10 @@ body .container {
   letter-spacing: -0.5px;
   color: var(--ink);
   margin: 0 0 10px;
+}
+.intro-name .name-zh {
+  font-family: 'Ma Shan Zheng', 'Kaiti SC', STKaiti, KaiTi, serif;
+  font-weight: 400;
 }
 .intro-sub {
   font-size: 16px;
@@ -330,6 +336,9 @@ ul.news-list .news-date {
 /* Drop the preview-image / badge column; let the citation span the full width */
 .pub-byyear ol.bibliography li .col-sm-2 { display: none; }
 .pub-byyear ol.bibliography li .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
+/* Citation column fills the rest of the row (theme default col-sm-8 left 1/6 of the width empty) */
+.publications ol.bibliography li .col-sm-8 { flex: 1 1 0; max-width: none; }
+
 /* Entry typography on every publication list (by year, by topic, presentations, homepage):
    ink title in medium-bold; authors + venue one size smaller in grey */
 .publications ol.bibliography li .title {
@@ -349,16 +358,28 @@ ul.news-list .news-date {
 .publications ol.bibliography li .author strong { color: var(--ink); }
 /* The status line ("Under review" / "Revised and resubmitted"): smaller, muted */
 .publications ol.bibliography li .periodical + .periodical { font-size: 13px; color: var(--muted); }
-/* Compact list: the [HTML] link sits inline after "journal, year" (small),
-   so the separate link-button row is dropped on this page only */
-.periodical-html { display: none; }
-.pub-byyear .periodical-html {
-  display: inline;
-  margin-left: 4px;
-  font-size: 12.5px;
+/* Full-text link: a small blue paper icon right after "journal, year" (every list) */
+.publications .periodical-html {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  padding: 2px 7px;
+  border-radius: 100px;
+  background: #e8f0fe;
   color: var(--link);
+  vertical-align: -2px;
 }
-.pub-byyear .periodical-html:hover { color: var(--link-hover); }
+.publications .periodical-html svg {
+  display: block;
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.publications .periodical-html:hover { background: #d2e3fc; color: var(--link-hover); }
 .pub-byyear .links { display: none; }
 .pub-byyear .badges { display: none; }   /* empty citation-badge row otherwise adds a gap under every entry */
 
