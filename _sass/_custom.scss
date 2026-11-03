@@ -309,12 +309,25 @@ ul.news-list .news-date {
 /* Drop the preview-image / badge column; let the citation span the full width */
 .pub-byyear ol.bibliography li .col-sm-2 { display: none; }
 .pub-byyear ol.bibliography li .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
-/* Title bold; authors plain; venue italic dark-grey */
-.pub-byyear .title { font-weight: 700; font-size: 15px; color: #1a1a1a; }
-.pub-byyear .author { font-size: 15px; color: #000; }
-.pub-byyear .periodical { font-size: 15px; color: #333; }
-/* The status line ("Under review" / "Major revision"): smaller, muted */
-.pub-byyear .periodical + .periodical { font-size: 13px; color: #777; }
+/* Entry typography on every publication list (by year, by topic, presentations, homepage):
+   dark bold title; authors + venue one size smaller in slate grey (like yuntaodu.me) */
+.publications ol.bibliography li .title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #1a1a1a;
+}
+.publications ol.bibliography li .author,
+.publications ol.bibliography li .periodical {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #4b5563;
+}
+.publications ol.bibliography li .periodical em { color: #4b5563; }
+/* Own name stays bold + underlined, a shade darker than the co-authors */
+.publications ol.bibliography li .author strong { color: #1f2937; }
+/* The status line ("Under review" / "Revised and resubmitted"): smaller, muted */
+.publications ol.bibliography li .periodical + .periodical { font-size: 12.5px; color: #6b7280; }
 /* Compact list: the [HTML] link sits inline after "journal, year" (small),
    so the separate link-button row is dropped on this page only */
 .periodical-html { display: none; }
