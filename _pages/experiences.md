@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /experiences/
-title: Experiences
+title: Research
 nav: true
 hide_title: true   # the nav tab already names the page
 nav_order: 3
