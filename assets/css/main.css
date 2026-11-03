@@ -1420,17 +1420,29 @@ ul.honors-list li::marker {
 }
 
 .pub-byyear ol.bibliography {
-  list-style: decimal;
+  list-style: none; /* numbers drawn below; Safari ignores custom ::marker content */
   padding-left: 1.6rem;
   margin: 0;
 }
 
 .pub-byyear ol.bibliography > li {
+  position: relative;
   counter-increment: pubnum;
 }
 
 .pub-byyear ol.bibliography > li::marker {
-  content: counter(pubnum) ".  ";
+  content: none;
+}
+
+.pub-byyear ol.bibliography > li::before {
+  content: counter(pubnum) ".";
+  position: absolute;
+  left: -1.6rem;
+  width: 1.2rem;
+  text-align: right;
+  font-size: 16px; /* same size and line height as the title it sits beside */
+  line-height: 1.45;
+  color: var(--body);
 }
 
 .pub-byyear ol.bibliography li {
