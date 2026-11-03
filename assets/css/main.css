@@ -1547,6 +1547,16 @@ ul.honors-list li::marker {
   max-width: 100%;
 }
 
+/* Same compact spacing as the Publications page: drop the empty badge/link rows */
+.presentations-list ol.bibliography li {
+  margin: 0 0 14px;
+}
+
+.presentations-list .links,
+.presentations-list .badges {
+  display: none;
+}
+
 /* ---- Experiences page: let long date badges wrap instead of overflowing into the title ---- */
 .cv .badge {
   white-space: normal;
