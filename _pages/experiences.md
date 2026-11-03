@@ -3,6 +3,7 @@ layout: page
 permalink: /experiences/
 title: Experiences
 nav: true
+hide_title: true   # the card already carries the section heading
 nav_order: 3
 ---
 <!-- _pages/experiences.md -->
