@@ -306,17 +306,26 @@ ul.news-list .news-date {
   padding: 0;
   margin: 24px 0 8px;
 }
-/* Entry list: disc bullets, like the reference */
+/* Entry list: no markers (like Google Research); entries separated by space alone */
 .pub-byyear ol.bibliography {
-  list-style: disc;
-  padding-left: 28px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 .pub-byyear ol.bibliography li {
-  margin: 10px 0;
+  margin: 0 0 14px;
   line-height: 1.5;
   font-size: 15px;
   color: var(--body);
+}
+/* Publication-count summary at the top of the page (mirrors the CV summary line) */
+.pub-summary {
+  font-size: 15px;
+  color: var(--body);
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 0.4rem 0 0.8rem;
 }
 /* Drop the preview-image / badge column; let the citation span the full width */
 .pub-byyear ol.bibliography li .col-sm-2 { display: none; }
@@ -351,7 +360,7 @@ ul.news-list .news-date {
 }
 .pub-byyear .periodical-html:hover { color: var(--link-hover); }
 .pub-byyear .links { display: none; }
-.pub-byyear .badges { padding-bottom: 0; }   /* empty badge row otherwise adds a gap */
+.pub-byyear .badges { display: none; }   /* empty citation-badge row otherwise adds a gap under every entry */
 
 /* ---- Presentations page: numbered list, flush-left (no empty image column) ---- */
 .presentations-list ol.bibliography {
