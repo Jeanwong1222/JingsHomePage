@@ -136,7 +136,7 @@
         <div class="periodical">
           {{ periodical | strip }}
           {%- if entry.html %}
-          <a href="{{ entry.html }}" class="periodical-html">[HTML]</a>
+          <a href="{{ entry.html }}" class="periodical-html" title="Full text (HTML)" aria-label="Full text (HTML)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg></a>
           {%- endif %}
         </div>
         {%- if entry.note %}
@@ -155,9 +155,6 @@
           {%- endif %}
           {%- if entry.bibtex_show %}
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          {%- endif %}
-          {%- if entry.html %}
-            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
           {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
