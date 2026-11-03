@@ -5,8 +5,8 @@
    Imported last in main.scss so these rules override the al-folio defaults.
    ========================================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..700&display=swap');
-/* Brush Kaishu (楷书) face for the Chinese name only; text= subsets the download to these two glyphs */
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E9%BB%84%E5%A9%A7&display=swap');
+/* Noto Sans SC Light (思源黑体) for the Chinese name only; text= subsets the download to these two glyphs */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&text=%E9%BB%84%E5%A9%A7&display=swap');
 
 :root {
   --font-ui: 'Google Sans Flex', Roboto, Arial, Helvetica, sans-serif;
@@ -123,8 +123,8 @@ body .container {
   margin: 0 0 10px;
 }
 .intro-name .name-zh {
-  font-family: 'Ma Shan Zheng', 'Kaiti SC', STKaiti, KaiTi, serif;
-  font-weight: 400;
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-weight: 300;
 }
 .intro-sub {
   font-size: 16px;
@@ -169,11 +169,11 @@ body .container {
 
 /* ---- Section headers (News, Selected Publications, Honors, Services) ---- */
 .post > article h2 {
-  font-size: 22px;
-  font-weight: 500;
-  text-transform: none;
-  letter-spacing: 0;
-  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--link);
   margin: 2.2rem 0 0.9rem;
   padding-top: 1.8rem;
   border-top: 1px solid var(--rule);
@@ -184,21 +184,14 @@ body .container {
 
 /* ---- Honors & Awards list ---- */
 ul.honors-list {
-  list-style: none;
-  padding-left: 0;
+  list-style: disc;
+  padding-left: 1.2em;
   margin: 0.4rem 0 1.6rem;
 }
 ul.honors-list li {
-  position: relative;
-  padding-left: 1.2em;
+  padding-left: 0;
   margin: 0.5rem 0;
   line-height: 1.5;
-}
-ul.honors-list li::before {
-  content: "\2022";
-  color: var(--link);
-  position: absolute;
-  left: 0;
 }
 
 /* ---- News list: [YYYY.MM] inline, bulleted (matches reference) ---- */
@@ -215,9 +208,16 @@ ul.news-list .news-date {
   margin-right: 0.15rem;
   color: #80868b;   /* light grey, like other secondary text */
 }
-/* One bullet style site-wide: Google-blue dots on every list */
-article ul > li::marker { color: var(--link); }
-.list-dot { color: var(--link); }
+/* Homepage lists (News, Honors, Services): Google-blue dots at full disc size */
+ul.news-list li::marker,
+ul.honors-list li::marker { color: var(--link); }
+.list-dot {
+  color: var(--link);
+  font-size: 1.3em;
+  line-height: 1;
+  vertical-align: -0.08em;
+  margin-right: 0.15em;
+}
 
 /* ---- Navbar links: lighter weight (was too bold) ---- */
 .navbar .nav-item .nav-link,
@@ -307,23 +307,27 @@ article ul > li::marker { color: var(--link); }
 /* ---- Publications (by-year) ---- */
 /* Year / section headings: medium weight, ink, with a thin rule underneath to divide sections */
 .pub-byyear .pub-year {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
-  color: var(--ink);
+  color: var(--link);
   text-transform: none;
   letter-spacing: 0;
   border: 0;
   border-bottom: 1px solid var(--rule);
   padding: 0 0 6px;
-  margin: 32px 0 12px;
+  margin: 40px 0 12px;
 }
-/* Entry list: blue dots, same as every other list on the site */
+/* Entry list: numbered like Presentations; each year heading restarts the count at 1.
+   A year can hold several <ol>s (articles + chapters), so a page-level counter keeps the
+   numbering continuous within the year instead of restarting per list. */
+.pub-byyear .pub-year { counter-reset: pubnum; }
 .pub-byyear ol.bibliography {
-  list-style: disc;
-  padding-left: 22px;
+  list-style: decimal;
+  padding-left: 1.6rem;
   margin: 0;
 }
-.pub-byyear ol.bibliography li::marker { color: var(--link); }
+.pub-byyear ol.bibliography > li { counter-increment: pubnum; }
+.pub-byyear ol.bibliography > li::marker { content: counter(pubnum) ".  "; }
 .pub-byyear ol.bibliography li {
   margin: 0 0 14px;
   line-height: 1.5;
