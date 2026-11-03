@@ -3,6 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching
 nav: true
+hide_title: true   # the card already carries the section heading
 nav_order: 4
 ---
 <!-- _pages/teaching.md -->
