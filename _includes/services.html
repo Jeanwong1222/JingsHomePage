@@ -6,7 +6,7 @@
     {% if item.name %}
     <div style="margin-left: 1em; margin-bottom: 0.4em;"><span class="list-dot">•</span> {{ item.name }}</div>
       {% for sub in item.subitems %}
-    <div style="margin-left: 2.5em; margin-bottom: 0.3em;">– {{ sub }}</div>
+    <div class="service-sub">– {{ sub }}</div>
       {% endfor %}
     {% else %}
     <div style="margin-left: 1em; margin-bottom: 0.4em;"><span class="list-dot">•</span> {{ item }}</div>
