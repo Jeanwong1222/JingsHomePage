@@ -1238,7 +1238,7 @@ ul.honors-list li {
 
 ul.honors-list li::before {
   content: "•";
-  color: var(--muted);
+  color: var(--link);
   position: absolute;
   left: 0;
 }
@@ -1257,6 +1257,16 @@ ul.news-list li {
 ul.news-list .news-date {
   white-space: nowrap;
   margin-right: 0.15rem;
+  color: #80868b; /* light grey, like other secondary text */
+}
+
+/* One bullet style site-wide: Google-blue dots on every list */
+article ul > li::marker {
+  color: var(--link);
+}
+
+.list-dot {
+  color: var(--link);
 }
 
 /* ---- Navbar links: lighter weight (was too bold) ---- */
@@ -1392,7 +1402,7 @@ ul.news-list .news-date {
 }
 
 /* ---- Publications (by-year) ---- */
-/* Year / section headings: medium weight, ink, no border, generous top gap */
+/* Year / section headings: medium weight, ink, with a thin rule underneath to divide sections */
 .pub-byyear .pub-year {
   font-weight: 500;
   font-size: 18px;
@@ -1400,15 +1410,20 @@ ul.news-list .news-date {
   text-transform: none;
   letter-spacing: 0;
   border: 0;
-  padding: 0;
-  margin: 24px 0 8px;
+  border-bottom: 1px solid var(--rule);
+  padding: 0 0 6px;
+  margin: 32px 0 12px;
 }
 
-/* Entry list: no markers (like Google Research); entries separated by space alone */
+/* Entry list: blue dots, same as every other list on the site */
 .pub-byyear ol.bibliography {
-  list-style: none;
-  padding-left: 0;
+  list-style: disc;
+  padding-left: 22px;
   margin: 0;
+}
+
+.pub-byyear ol.bibliography li::marker {
+  color: var(--link);
 }
 
 .pub-byyear ol.bibliography li {
