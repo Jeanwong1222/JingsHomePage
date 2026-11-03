@@ -3,6 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 nav: true
+hide_title: true   # the nav tab already names the page
 nav_order: 1
 ---
 <!-- _pages/publications.md -->

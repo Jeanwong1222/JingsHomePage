@@ -3,6 +3,7 @@ layout: page
 permalink: /presentations/
 title: Presentations
 nav: true
+hide_title: true   # the nav tab already names the page
 nav_order: 2
 ---
 <!-- _pages/presentations.md -->
